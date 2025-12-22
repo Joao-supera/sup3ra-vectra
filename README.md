@@ -7,6 +7,13 @@
 [![License](https://img.shields.io/badge/License-MIT%20%2B%20Ethical%20Clause-blue)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-2.1-green)](SPEC.md)
 
+![Spec Version](https://img.shields.io/badge/Spec-v2.1-blue)
+![License](https://img.shields.io/badge/License-MIT%20+%20Ethical%20Clause-green)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Joao-supera.sup3ra-vectra)
+![Clones](https://img.shields.io/badge/Clones-50%2B-brightgreen)
+![Validation](https://img.shields.io/badge/Validation-In_Progress-yellow)
+![Language](https://img.shields.io/badge/Language-Python%20100%25-lightgrey)
+
 ---
 
 ## 🎯 What is This?

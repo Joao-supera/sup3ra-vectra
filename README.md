@@ -358,8 +358,8 @@ If you find issues or want to contribute, please open an issue or PR.
 ---
 
 ## 🌐 Connect & Collaborate  
-**EN:** SUP3RA VECTRA™ is open for collaboration - especially for mechanistic interpretability researchers, safety engineers, and GPU partners.  
-**PT-BR:** SUP3RA VECTRA™ está aberto a colaborações - especialmente para pesquisadores em interpretabilidade mecanicista, engenheiros de segurança e parceiros com acesso a GPU.
+SUP3RA VECTRA™ is open for collaboration - especially for mechanistic interpretability researchers, safety engineers, and GPU partners.  
+
 
 📧 **Contact:** agsup3radigital@gmail.com
 🐙 **GitHub:** [Joao-supera](https://github.com/Joao-supera)  

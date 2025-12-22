@@ -147,5 +147,31 @@ Wang et al. (2023). Attribution Patching for Causal Tracing
 SUP3RA VECTRA™ is a framework for ethical traversal without simulation — ensuring safety through transparency, causal honesty, and measurable vectorial ethics.
 It is open for validation, not dogma.
 
+## 🚧 8. KNOWN LIMITATIONS
+
+This specification represents a theoretical framework. Current limitations include:
+
+1. **Feature Identification Uncertainty**
+   - F12_462980 is used as placeholder notation
+   - Real feature IDs require empirical SAE training
+   - Features may not map cleanly to single concepts
+
+2. **MBS Heuristic Nature**
+   - Cosine similarity is a proxy, not ground truth
+   - May produce false positives/negatives
+   - Requires empirical threshold tuning
+
+3. **Cultural Specificity**
+   - Ethical vectors assume Western context
+   - May need adaptation for different cultures
+   - Brazilian context partially addressed
+
+4. **Computational Cost**
+   - Real-time SAE inference requires GPU
+   - Latency overhead not yet quantified
+   - Trade-offs with model capabilities unknown
+
+**These limitations are research opportunities, not defects.**
+
 “We don’t align minds. We align mechanisms.”
 — João Henrique de Souza Batista, Fortaleza, Ceará (2025)

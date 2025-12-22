@@ -149,4 +149,3 @@ It is open for validation, not dogma.
 
 “We don’t align minds. We align mechanisms.”
 — João Henrique de Souza Batista, Fortaleza, Ceará (2025)
-v2.1 — Added full SUP3RA VECTRA™ specification (SPEC.md)

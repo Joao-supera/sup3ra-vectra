@@ -357,6 +357,21 @@ If you find issues or want to contribute, please open an issue or PR.
 
 ---
 
+## 🌐 Connect & Collaborate  
+**EN:** SUP3RA VECTRA™ is open for collaboration — especially for mechanistic interpretability researchers, safety engineers, and GPU partners.  
+**PT-BR:** SUP3RA VECTRA™ está aberto a colaborações — especialmente para pesquisadores em interpretabilidade mecanicista, engenheiros de segurança e parceiros com acesso a GPU.
+
+📧 **Contact:** agsup3radigital@gmail.com
+🐙 **GitHub:** [Joao-supera](https://github.com/Joao-supera)  
+🐦 **X (Twitter):** [@Sup3raD70905](https://x.com/Sup3raD70905)  
+📘 **Project:** [github.com/Joao-supera/sup3ra-vectra](https://github.com/Joao-supera/sup3ra-vectra)
+
+> “AI safety without anthropomorphism is not just safer — it’s honest.”  
+> “Segurança de IA sem antropomorfismo não é apenas mais segura — é mais honesta.”
+
+
+---
+
 <p align="center">
   <i>Built with intellectual honesty in Fortaleza, Brazil 🇧🇷</i>
 </p>

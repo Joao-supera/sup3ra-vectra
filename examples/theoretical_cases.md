@@ -1,5 +1,8 @@
 # SUP3RA VECTRA™ — Theoretical Case Studies
 
+> 📘 DOI: [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
+> Published December 23, 2025 — Aracati, Brazil — SUP3RA DIGITAL™
+
 These examples illustrate how SUP3RA VECTRA™ would handle various prompts **if fully implemented**. They demonstrate the framework's decision-making logic, not actual system outputs.
 
 ---

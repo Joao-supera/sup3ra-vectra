@@ -10,7 +10,7 @@
 ![Version](https://img.shields.io/badge/Version-2.1.0-green?style=flat-square)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square)
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Joao-supera.sup3ra-vectra)
-![Clones](https://img.shields.io/badge/Clones-50+-brightgreen)
+![Clones](https://img.shields.io/badge/Clones-100+-brightgreen)
 ![Integrity](https://img.shields.io/badge/Integrity-SHA256-green?style=flat-square)
 
 

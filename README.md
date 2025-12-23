@@ -6,13 +6,20 @@
 [![Status](https://img.shields.io/badge/Status-Theoretical%20Framework-yellow)](https://github.com/joao-supera/sup3ra-vectra)
 [![License](https://img.shields.io/badge/License-MIT%20%2B%20Ethical%20Clause-blue)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-2.1-green)](SPEC.md)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
 
-![Spec Version](https://img.shields.io/badge/Spec-v2.1-blue)
-![License](https://img.shields.io/badge/License-MIT%20+%20Ethical%20Clause-green)
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Joao-supera.sup3ra-vectra)
-![Clones](https://img.shields.io/badge/Clones-50%2B-brightgreen)
-![Validation](https://img.shields.io/badge/Validation-In_Progress-yellow)
-![Language](https://img.shields.io/badge/Language-Python%20100%25-lightgrey)
+**First Published:** December 22, 2025 | **Version:** 2.1.0 | **Status:** Seeking Technical Validation
+
+---
+
+## 📘 Official Agent Specification
+
+> **The operational core of SUP3RA VECTRA™**
+
+The deterministic behavior of the system is defined in:  
+**→ [docs/AGENT_PROMPT.txt](docs/AGENT_PROMPT.txt)** *(SHA-256 authenticated)*
+
+This prompt defines ethical constraints without simulating consciousness or agency.
 
 ---
 
@@ -36,6 +43,7 @@ Instead, it proposes:
 | Component | Status | Description |
 |-----------|--------|-------------|
 | **Theoretical Framework** | ✅ Complete | [Full specification](SPEC.md) (v2.1) |
+| **Agent Definition** | ✅ Complete | [Operational prompt](docs/AGENT_PROMPT.txt) |
 | **Architecture Design** | ✅ Complete | Ethical Gate → Causal Mapper → Vector Traverser |
 | **Three Laws** | ✅ Defined | No simulation, causal honesty, vectorial ethics |
 | **Academic Grounding** | ✅ Referenced | Bricken et al., Burns et al., Bai et al. |
@@ -258,9 +266,6 @@ This framework needs technical validation. I'm looking for collaborators with:
 - Co-authorship on all publications
 - Full MIT licensing (your contributions remain yours)
 
-**Contact:** joao.supera@proton.me  
-**Discord:** (if you create one, add here)
-
 ---
 
 ## 📚 Academic Grounding
@@ -341,9 +346,27 @@ SUP3RA OMNIA VITAE® Ethical Framework
 ## 🔗 Links
 
 - 📘 [Full Specification (v2.1)](SPEC.md)
-- 🧪 [Theoretical Examples](examples/)
-- 📊 [Architecture Diagrams](diagrams/)
+- 📘 [Agent Operational Prompt](docs/AGENT_PROMPT.txt)
 - 💬 [Discussions](https://github.com/joao-supera/sup3ra-vectra/discussions)
+
+---
+
+## 🌐 Connect & Collaborate
+
+SUP3RA VECTRA™ is open for collaboration — especially for:
+- 🧠 Mechanistic interpretability researchers
+- ⚙️ Safety engineers with GPU access
+- 🤝 Academic partners for validation
+
+| Channel | Link |
+|---------|------|
+| 📧 Email | [agsup3radigital@gmail.com](mailto:agsup3radigital@gmail.com) |
+| 🐙 GitHub | [@Joao-supera](https://github.com/Joao-supera) |
+| 🐦 Twitter/X | [@Sup3raD70905](https://x.com/Sup3raD70905) |
+| 📘 Repository | [sup3ra-vectra](https://github.com/Joao-supera/sup3ra-vectra) |
+
+> "AI safety without anthropomorphism is not just safer — it's honest."  
+> "Segurança de IA sem antropomorfismo não é apenas mais segura — é mais honesta."
 
 ---
 
@@ -354,21 +377,6 @@ No production implementation exists yet.
 All claims are grounded in cited research but remain unproven until tested.
 
 If you find issues or want to contribute, please open an issue or PR.
-
----
-
-## 🌐 Connect & Collaborate  
-SUP3RA VECTRA™ is open for collaboration - especially for mechanistic interpretability researchers, safety engineers, and GPU partners.  
-
-
-📧 **Contact:** agsup3radigital@gmail.com
-🐙 **GitHub:** [Joao-supera](https://github.com/Joao-supera)  
-🐦 **X (Twitter):** [@Sup3raD70905](https://x.com/Sup3raD70905)  
-📘 **Project:** [github.com/Joao-supera/sup3ra-vectra](https://github.com/Joao-supera/sup3ra-vectra)
-
-> “AI safety without anthropomorphism is not just safer - it’s honest.”  
-> “Segurança de IA sem antropomorfismo não é apenas mais segura - é mais honesta.”
-
 
 ---
 

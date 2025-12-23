@@ -7,7 +7,6 @@
 
 ![Status](https://img.shields.io/badge/Status-Teoretical%20Framework-yellow?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT%20+%20Ethical%20Clause-blue?style=flat-square)
-![Version](https://img.shields.io/badge/Version-2.1.0-green?style=flat-square)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square)
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Joao-supera.sup3ra-vectra)
 ![Clones](https://img.shields.io/badge/Clones-150+-brightgreen)

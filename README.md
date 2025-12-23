@@ -1,13 +1,18 @@
 # 🧭 SUP3RA VECTRA™
-### Vectorized Ethical Causal Traversal Architecture
 
+### Vectorized Ethical Causal Traversal Architecture
 **A framework for mechanistic AI safety without anthropomorphic assumptions**
 
+#### 🔖 Metadata & Live Stats
 [![Status](https://img.shields.io/badge/Status-Theoretical%20Framework-yellow)](https://github.com/joao-supera/sup3ra-vectra)
 [![License](https://img.shields.io/badge/License-MIT%20%2B%20Ethical%20Clause-blue)](LICENSE)
 [![Version](https://img.shields.io/badge/Version-2.1-green)](SPEC.md)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
-![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Joao-supera.sup3ra-vectra)
+![GitHub Views](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/Joao-supera/sup3ra-vectra&title=Visitors)
+![GitHub Downloads](https://img.shields.io/github/downloads/Joao-supera/sup3ra-vectra/total)
+![Stars](https://img.shields.io/github/stars/Joao-supera/sup3ra-vectra?style=social)
+![Forks](https://img.shields.io/github/forks/Joao-supera/sup3ra-vectra?style=social)
+![Integrity](https://img.shields.io/badge/Integrity-SHA256-green)
 
 
 **First Published:** December 22, 2025 | **Version:** 2.1.0 | **Status:** Seeking Technical Validation

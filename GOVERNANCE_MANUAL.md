@@ -1,4 +1,4 @@
-SHA-256: [to be generated after commit]
+SHA-256: 2f79744e4d6a06c9e78c4ceab280b894177d13c522af0208f5d09201c5bb8457
 Generated: 2025-12-23T18:32:00Z (UTC)
 Repository: https://github.com/Joao-supera/sup3ra-vectra
 Commit: [to be filled automatically]

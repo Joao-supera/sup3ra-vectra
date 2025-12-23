@@ -1,3 +1,7 @@
+> **🟢 NEW:** Extended governance documentation available in [GOVERNANCE_MANUAL_v2.2.md](GOVERNANCE_MANUAL_v2.2.md)  
+> Version 2.2 expands the 3 Laws into 7 NEXUS Clauses and introduces a dual-layer format (🟢 Human / 🔵 Machine) for ethical and technical interpretation.
+
+
 # 📘 SUP3RA VECTRA™ — SPEC v2.1  
 ## *Vectorized Ethical Causal Traversal Architecture*  
 ### *A Proposed Framework for Mechanistic Safety Without Simulation*  

@@ -399,5 +399,5 @@ If you find issues or want to contribute, please open an issue or PR.
 ---
 
 <p align="center">
-  <i>Built with intellectual honesty in Fortaleza, Brazil 🇧🇷</i>
+  <i>Built with intellectual honesty in Aracati, Brazil 🇧🇷</i>
 </p>

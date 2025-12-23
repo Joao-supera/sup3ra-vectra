@@ -1,8 +1,7 @@
-> 📘 DOI: [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058) 
-> Published: December 23, 2025 • Aracati, Brazil • SUP3RA DIGITAL 
-
 # 🌟 SUP3RA VECTRA™ 2.2  
 ## *Vector-Based Ethical Governance System — Executive & Technical Edition*  
+> 📘 DOI: [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058) 
+> Published: December 23, 2025 • Aracati, Brazil • SUP3RA DIGITAL 
 
 **Core Module:** SUP3RA OMNIA VITAE®  
 **Version:** 2.2 — *“Dual-Layer: Clear for Humans, Precise for Machines”*  

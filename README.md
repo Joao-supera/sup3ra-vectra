@@ -358,10 +358,11 @@ SUP3RA OMNIA VITAE® Ethical Framework
 
 ## 📚 Extended Documentation
 
-- 📘 [Full Specification (v2.1)](SPEC.md) - Original technical spec
-- 📗 [Governance Manual (v2.2)](GOVERNANCE_MANUAL.md) - **NEW: Dual-layer executive & technical edition**
-- 📘 [Agent Operational Prompt](docs/AGENT_PROMPT.txt) - Behavioral definition
-- 💬 [Discussions](https://github.com/joao-supera/sup3ra-vectra/discussions)
+- [Full Specification (v2.1)](SPEC.md) — Original technical specification  
+- [GOVERNANCE MANUAL (v2.2)](GOVERNANCE_MANUAL_v2.2.md) — **NEW: Dual-layer executive & technical edition**  
+- [Agent Operational Prompt](docs/AGENT_PROMPT.txt) — Behavioral definition  
+- [Discussions](https://github.com/Joao-supera/sup3ra-vectra/discussions)
+
 
 ---
 

@@ -1,7 +1,5 @@
-SHA-256: 2f79744e4d6a06c9e78c4ceab280b894177d13c522af0208f5d09201c5bb8457
-Generated: 2025-12-23T18:32:00Z (UTC)
-Repository: https://github.com/Joao-supera/sup3ra-vectra
-Commit: [to be filled automatically]
+> 📘 DOI: [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058) 
+> Published: December 23, 2025 • Aracati, Brazil • SUP3RA DIGITAL 
 
 # 🌟 SUP3RA VECTRA™ 2.2  
 ## *Vector-Based Ethical Governance System — Executive & Technical Edition*  
@@ -251,5 +249,11 @@ Original SPEC.md release
 Basic MBS calculation
 
 TraversalEngine implementation
+
+SHA-256: 2f79744e4d6a06c9e78c4ceab280b894177d13c522af0208f5d09201c5bb8457
+Generated: 2025-12-23T18:32:00Z (UTC)
+Repository: https://github.com/Joao-supera/sup3ra-vectra
+Commit: [to be filled automatically]
+
 
 <p align="center"> <i>Originally developed in Aracati, Brazil 🇧🇷<br> Written in English for global research dissemination and ethical AI governance.</i> </p> ```

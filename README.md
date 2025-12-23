@@ -1,3 +1,6 @@
+> 📘 DOI: [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058) 
+> Published: December 23, 2025 • Aracati, Brazil • SUP3RA DIGITAL 
+
 # 🧭 SUP3RA VECTRA™
 
 ### Vectorized Ethical Causal Traversal Architecture

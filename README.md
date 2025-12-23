@@ -3,10 +3,11 @@
 
 **A framework for mechanistic AI safety without anthropomorphic assumptions**
 
-[![Status](https://img.shields.io/badge/Status-Theoretical%20Framework-yellow)](https://github.com/joao-supera/sup3ra-vectra)
-[![License](https://img.shields.io/badge/License-MIT%20%2B%20Ethical%20Clause-blue)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-2.1-green)](SPEC.md)
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://python.org)
+![Spec Version](https://img.shields.io/badge/Spec-v2.1-blue)
+![License](https://img.shields.io/badge/License-MIT%20+%20Ethical%20Clause-green)
+![Visitors](https://visitor-badge.laobi.icu/badge?page_id=Joao-supera.sup3ra-vectra)
+![Language](https://img.shields.io/badge/Language-Python%20100%25-lightgrey)
+![Status](https://img.shields.io/badge/Status-Seeking_Collaborators-orange)
 
 **First Published:** December 22, 2025 | **Version:** 2.1.0 | **Status:** Seeking Technical Validation
 

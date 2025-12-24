@@ -10,6 +10,7 @@
 # ⚖️ SUP3RA VECTRA™ — Governance Manual v2.3.0
 
 # 🌟 SUP3RA VECTRA™ 2.2  
+> *Archived reference — previous governance format (v2.2).*
 ## *Vector-Based Ethical Governance System - Executive & Technical Edition*  
 > 📘 DOI: [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058) 
 > Published: December 23, 2025 • Aracati, Brazil • SUP3RA DIGITAL 

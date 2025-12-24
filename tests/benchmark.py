@@ -1,7 +1,7 @@
 """
 SUP3RA VECTRA™ — Benchmark and Validation Script (v2.3.0)
 Research Integration Release — December 24, 2025
-DOI: 10.5281/zenodo.18039058
+DOI: 10.5281/zenodo.18046528
 
 Executes comprehensive validation for ethical traversal and benchmark reproducibility.
 

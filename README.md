@@ -1,5 +1,16 @@
 # 🧭 SUP3RA VECTRA™
 
+---
+
+### 🔖 Latest Research Release — v2.3.0 (Dec 24, 2025)
+### 🧠 SUP3RA VECTRA™ v2.3.0 — Research Integration Release  
+A major update introducing the **FOR_RESEARCHERS.md** guide for reproducible AI safety integration and benchmark transparency.
+
+📘 **DOI:** [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
+💻 **GitHub Release:** [View on GitHub →](https://github.com/Joao-supera/sup3ra-vectra/releases/tag/v2.3.0)  
+
+---
+
 ### Vectorized Ethical Causal Traversal Architecture
 **A framework for mechanistic AI safety without anthropomorphic assumptions**
 > 📘 DOI: [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058) 

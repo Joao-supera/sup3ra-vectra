@@ -1,3 +1,14 @@
+> 🆕 **Updated for Research Integration Release (v2.3.0)**  
+> This version maintains the Human 🟢 / Machine 🔵 dual-layer ethical structure and is cross-referenced in [FOR_RESEARCHERS.md](./FOR_RESEARCHERS.md).  
+> Enhances traceability for ethical governance and experimental reproducibility.
+
+📘 **DOI:** [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
+📅 **Published:** December 24, 2025 — Aracati, Brazil — SUP3RA DIGITAL™
+
+---
+
+# ⚖️ SUP3RA VECTRA™ — Governance Manual v2.3.0
+
 # 🌟 SUP3RA VECTRA™ 2.2  
 ## *Vector-Based Ethical Governance System - Executive & Technical Edition*  
 > 📘 DOI: [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058) 

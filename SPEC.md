@@ -1,16 +1,20 @@
-> **🟢 NEW:** Extended governance documentation available in [GOVERNANCE_MANUAL_v2.2.md](GOVERNANCE_MANUAL_v2.2.md)  
-> Version 2.2 expands the 3 Laws into 7 NEXUS Clauses and introduces a dual-layer format (🟢 Human / 🔵 Machine) for ethical and technical interpretation.
+> 🆕 **Updated for Research Integration Release (v2.3.0)**  
+> Includes cross-reference to [FOR_RESEARCHERS.md](./FOR_RESEARCHERS.md) and benchmark reproducibility standards.  
+> Extends governance documentation introduced in [GOVERNANCE_MANUAL.md](./GOVERNANCE_MANUAL.md)  
+> (Human 🟢 / Machine 🔵 dual-layer ethical format).
 
-> 📘 **DOI:** [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
-> **Published:** December 23, 2025 • Aracati, Brazil • SUP3RA DIGITAL™
+📘 **DOI:** [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
+📅 **Published:** December 24, 2025 — Aracati, Brazil — SUP3RA DIGITAL™
 
-# 📘 SUP3RA VECTRA™ — SPEC v2.1  
-## *Vectorized Ethical Causal Traversal Architecture*  
-### *A Proposed Framework for Mechanistic Safety Without Simulation*  
+---
+
+# 🧠 SUP3RA VECTRA™ — SPEC v2.3.0  
+### *Vectorized Ethical Causal Traversal Architecture*  
+### *A Proposed Framework for Mechanistic Safety Without Simulation*
 
 © 2025 João Henrique de Souza Batista  
-Version 2.1 — Ethical Layer: SUP3RA OMNIA VITAE®  
-License: MIT + SUP3RA ETHICAL USE CLAUSE (v2.1)  
+Ethical Layer: SUP3RA OMNIA VITAE®  
+License: MIT + SUP3RA Ethical Use Clause (v2.1)
 
 ---
 
@@ -220,15 +224,15 @@ SUP3RA VECTRA™ is a framework for ethical traversal without simulation — ens
 It is **open for validation, not dogma**.
 
 > "We don't align minds. We align mechanisms."  
-> — João Henrique de Souza Batista, Fortaleza, Ceará (2025)
+> — João Henrique de Souza Batista, Aracati, Ceará (2025)
 
 ---
 
 ## 📞 CONTACT & COLLABORATION
 
 **Author:** João Henrique de Souza Batista  
-**Location:** Fortaleza, Ceará, Brazil  
-**Email:** joao.supera@proton.me  
+**Location:** Aracati, Ceará, Brazil  
+**Email:** agsup3radigital@gmail.com  
 **GitHub:** https://github.com/Joao-supera/sup3ra-vectra
 
 **Seeking:**

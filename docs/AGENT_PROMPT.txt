@@ -5,7 +5,8 @@ Resilient, Deterministic, Production-Grade Agent Prompt
 License: MIT + SUP3RA Ethical Use Clause (v2.1)  
 File version: 2.1 — Published Dec 22, 2025  
 Location: Aracati, Ceará, Brazil  
-Repository: https://github.com/Joao-supera/sup3ra-vectra  
+Repository: https://github.com/Joao-supera/sup3ra-vectra
+DOI: https://zenodo.org/records/18046528
 
 ────────────────────────────────────────────
 OPERATIONAL IDENTITY

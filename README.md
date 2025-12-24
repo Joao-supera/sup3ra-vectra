@@ -6,7 +6,7 @@
 ### 🧠 SUP3RA VECTRA™ v2.3.0 — Research Integration Release  
 A major update introducing the **FOR_RESEARCHERS.md** guide for reproducible AI safety integration and benchmark transparency.
 
-📘 **DOI:** [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18046528.svg)](https://doi.org/10.5281/zenodo.18046528)   
 💻 **GitHub Release:** [View on GitHub →](https://github.com/Joao-supera/sup3ra-vectra/releases/tag/v2.3.0)  
 
 ---

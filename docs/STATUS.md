@@ -50,7 +50,7 @@ See [CONTRIBUTING.md](../CONTRIBUTING.md) for contribution and review guidelines
 
 ## Reference
 
-> **DOI:** [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18046528.svg)](https://doi.org/10.5281/zenodo.18046528)  
 > **Version:** v2.3.0 (Research Integration Release)  
 > **Publisher:** SUP3RA DIGITAL  
 > **Location:** Aracati, Brazil  

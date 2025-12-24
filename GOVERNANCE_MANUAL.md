@@ -2,7 +2,7 @@
 > This version maintains the Human 🟢 / Machine 🔵 dual-layer ethical structure and is cross-referenced in [FOR_RESEARCHERS.md](./FOR_RESEARCHERS.md).  
 > Enhances traceability for ethical governance and experimental reproducibility.
 
-📘 **DOI:** [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18046528.svg)](https://doi.org/10.5281/zenodo.18046528)  
 📅 **Published:** December 24, 2025 — Aracati, Brazil — SUP3RA DIGITAL™
 
 ---

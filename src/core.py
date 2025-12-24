@@ -1,7 +1,7 @@
 """
 SUP3RA VECTRA™ — Traversal Engine Core (v2.3.0)
 Research Integration Release — December 24, 2025
-DOI: 10.5281/zenodo.18039058
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18046528.svg)](https://doi.org/10.5281/zenodo.18046528)  
 
 © 2025 João Henrique de Souza Batista
 License: MIT + SUP3RA Ethical Use Clause (v2.1)

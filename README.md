@@ -22,7 +22,7 @@ A major update introducing the **FOR_RESEARCHERS.md** guide for reproducible AI 
 ![Status](https://img.shields.io/badge/Status-Teoretical%20Framework-yellow?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT%20+%20Ethical%20Clause-blue?style=flat-square)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square)
-![Clones](https://img.shields.io/badge/Clones-250+-brightgreen)
+![Clones](https://img.shields.io/badge/Clones-330+-brightgreen)
 ![Integrity](https://img.shields.io/badge/Integrity-SHA256-green?style=flat-square)
 
 

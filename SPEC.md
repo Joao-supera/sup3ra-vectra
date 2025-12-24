@@ -3,7 +3,7 @@
 > Extends governance documentation introduced in [GOVERNANCE_MANUAL.md](./GOVERNANCE_MANUAL.md)  
 > (Human 🟢 / Machine 🔵 dual-layer ethical format).
 
-📘 **DOI:** [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18046528.svg)](https://doi.org/10.5281/zenodo.18046528)  
 📅 **Published:** December 24, 2025 — Aracati, Brazil — SUP3RA DIGITAL™
 
 ---

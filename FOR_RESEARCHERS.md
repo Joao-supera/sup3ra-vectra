@@ -1,16 +1,17 @@
 ---
 title: "FOR_RESEARCHERS.md — SUP3RA VECTRA™ Overview"
 date: 2025-12-23
-doi: 10.5281/zenodo.18039058
+doi: 10.5281/zenodo.18046528
 license: MIT + SUP3RA Ethical Use Clause (v2.1)
 ---
 
 # 🧠 FOR RESEARCHERS — Quick Overview of SUP3RA VECTRA™
 
 **Repository:** [SUP3RA VECTRA™ — Vectorized Ethical Causal Framework](https://github.com/Joao-supera/sup3ra-vectra)  
-**DOI:** [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058)  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18046528.svg)](https://doi.org/10.5281/zenodo.18046528)  
+**Version:** v2.3.0 (Research Integration Release)
 **Author:** João Henrique de Souza Batista — SUP3RA DIGITAL  
-**Published:** December 23, 2025 — Aracati, Brazil  
+**Published:** December 24, 2025 — Aracati, Brazil
 **License:** MIT + SUP3RA Ethical Use Clause (v2.1)
 
 ---

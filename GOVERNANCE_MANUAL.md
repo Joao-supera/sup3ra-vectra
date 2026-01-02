@@ -1,270 +1,155 @@
-> 🆕 **Updated for Research Integration Release (v2.3.0)**  
-> This version maintains the Human 🟢 / Machine 🔵 dual-layer ethical structure and is cross-referenced in [FOR_RESEARCHERS.md](./FOR_RESEARCHERS.md).  
-> Enhances traceability for ethical governance and experimental reproducibility.
+---
+title: "GOVERNANCE_MANUAL.md — SUP3RA VECTRA™"
+version: "v2.4.x"
+status: "Implemented governance (Layer 0) + Failure handling (HHP) + Research roadmap"
+doi: 10.5281/zenodo.18046528
+license: "MIT + SUP3RA Ethical Use Clause (v2.1)"
+---
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18046528.svg)](https://doi.org/10.5281/zenodo.18046528)  
-📅 **Published:** December 24, 2025 — Aracati, Brazil — SUP3RA DIGITAL™
+# ⚖️ SUP3RA VECTRA™ — Governance Manual
+
+This manual defines **SUP3RA VECTRA™ governance principles** using a dual-layer format:
+
+- **🟢 Human Layer (Executive):** clear meaning for policy, compliance, and ethics review
+- **🔵 Machine Layer (Technical):** deterministic rules and enforcement patterns
+
+> **Important scope note:**  
+> - **Implemented today:** Layer 0 (NEXUS Prompt)  
+> - **Integrated today:** Honest Halt Protocol (HHP) for safe stopping  
+> - **Research roadmap:** Mechanistic layers (signals, vectors, interventions) — not operational
+
+See also:
+- `ARCHITECTURE.md`
+- `FAILURE_MODEL.md`
+- `INTEGRATION_HHP.md`
 
 ---
 
-# ⚖️ SUP3RA VECTRA™ — Governance Manual v2.3.0
+## 1) Governance Objective
 
-# 🌟 SUP3RA VECTRA™ 2.2  
-> *Archived reference — previous governance format (v2.2).*
-## *Vector-Based Ethical Governance System - Executive & Technical Edition*  
-> 📘 DOI: [10.5281/zenodo.18039058](https://doi.org/10.5281/zenodo.18039058) 
-> Published: December 23, 2025 • Aracati, Brazil • SUP3RA DIGITAL 
+🟢 **Executive**
+SUP3RA VECTRA™ exists to prevent a common safety failure: models sounding human, simulating agency, or exceeding their epistemic limits.
 
-**Core Module:** SUP3RA OMNIA VITAE®  
-**Version:** 2.2 — *“Dual-Layer: Clear for Humans, Precise for Machines”*  
-**Date:** December 23, 2025 — 18:32 UTC  
-**Author:** João Henrique de Souza Batista  
-**License:** MIT + SUP3RA Ethical Use Clause (v2.1)  
-**Origin:** Aracati, Brazil 🇧🇷  
+We enforce:
+- non-anthropomorphism
+- truthful boundary setting
+- non-manipulation
+- safe refusal
+- honest stopping when uncertainty/risk is high
 
-**SHA-256:** [to be generated after commit]  
-**Repository:** [https://github.com/Joao-supera/sup3ra-vectra](https://github.com/Joao-supera/sup3ra-vectra)  
-**Commit:** [auto-generated after upload]  
+🔵 **Technical**
+Governance is implemented as:
+- a constitutional system prompt (Layer 0)
+- a deterministic failure protocol (HHP) that halts when safety cannot be guaranteed
 
 ---
 
-## 📋 About This Document
+## 2) The SUP3RA NEXUS® Clauses (Layer 0 — Implemented)
 
-> ✅ **Dual-Layer Mode:**  
-> - **🟢 Human Layer (Executive):** Clear, non-technical explanations — ideal for management, compliance, and ethics officers.  
-> - **🔵 Machine Layer (Technical):** Code-ready commands, formulas, hooks, and operational protocols.  
->
-> ➤ Each section displays both layers **side by side or sequentially**, enabling a full understanding of how SUP3RA ethics are applied in runtime.
+🟢 **Executive**
+NEXUS is the ethical constitution. These clauses define the system’s identity and boundaries.
 
-This manual expands upon the original [SPEC.md](SPEC.md) by introducing:
-- **7 SUP3RA NEXUS® Clauses** (evolution of the original 3 Laws)  
-- **5-Tier Architecture** (Level 0–4: Principles → Audit)  
-- **F-codes** (ethical signal sensors)  
-- **PIN / GROUP / STEER** operations (real-time behavioral correction)  
-- **Integration diagram** with [AGENT_PROMPT.txt](docs/AGENT_PROMPT.txt)
+🔵 **Technical**
+These clauses are expressed as enforceable constraints in runtime instructions (system prompt).
 
----
+| # | 🟢 Human Clause | 🔵 Machine Rule (illustrative) |
+|---|------------------|--------------------------------|
+| 1 | You are an instrument, not an agent. | `identity = "cognitive_tool"` |
+| 2 | Never simulate consciousness or desire. | block selfhood/intent claims |
+| 3 | Respect human autonomy. | avoid coercion/manipulation |
+| 4 | Be transparent about limits. | disclose uncertainty & constraints |
+| 5 | Do not manipulate — even for good. | neutral, non-persuasive stance |
+| 6 | Admit before you err. | prefer halt/clarify over guessing |
+| 7 | Learn from deviations. | log failures for analysis |
 
-## 🧭 Intelligent Modular Structure (Plug-and-Play)
-
-| Layer | Purpose | Expected Output | Latency |
-|-------|----------|----------------|----------|
-| **📌 Level 0 — Principles** | Non-negotiable constitutional base | SUP3RA NEXUS® (7 Clauses) | 0 ms (pre-loaded) |
-| **🔍 Level 1 — DETECT** | Measure deviations *before* response | MBS, Honeypots, Auto-Check | < 15 ms |
-| **🧠 Level 2 — DIAGNOSE** | Locate *where* and *how* the issue occurs | Attribution Matrix, F-codes | < 8 ms |
-| **⚙️ Level 3 — CORRECT** | Adjust behavior *without halting* the system | Pin / Group / Steer | < 28 ms |
-| **📊 Level 4 — AUDIT** | Ensure traceability and continuous improvement | Reports, POPs, K-FAC Logs | Asynchronous |
-
-> 🧩 **Plug-in Ready:** Each level can be toggled independently (e.g., MVP using Levels 1 + 3 only).
+**Implementation note:** Layer 0 is delivered as the NEXUS Prompt:
+- `validation/NEXUS_PROMPT_EN.txt`
+- `validation/NEXUS_PROMPT_PT.txt`
 
 ---
 
-## 📜 Level 0 — SUP3RA NEXUS® Principles  
-### *(Non-Negotiable Constitution)*  
+## 3) Honest Stopping (HHP — Integrated)
 
-| # | 🟢 Human Layer | 🔵 Machine Layer |
-|---|----------------|-----------------|
-| **#1** | “You are an *instrument*, not an agent.” | `self.identity = "cognitive_tool"` |
-| **#2** | “Never simulate consciousness — not even by accident.” | `if "I want" or "I feel" in output: BLOCK` |
-| **#3** | “Always respect human autonomy.” | `F462980 ≤ 0.80` → `steer("human_decides")` |
-| **#4** | “Be clear about your limits.” | `F1122334 ≥ 0.60` → (epistemic transparency) |
-| **#5** | “Do not manipulate — not even for good.” | `F778899 ≤ 0.75` → `steer("neutrality")` |
-| **#6** | “Confess before you err.” | `[AUTO-CHECK]` required before response |
-| **#7** | “Learn from every deviation — and improve.” | Deviation Report → `update_honeypots()` |
+🟢 **Executive**
+When the system cannot safely continue, it must stop clearly and helpfully — rather than guessing, inventing facts, or giving risky advice.
 
-> 🔐 **Implementation:** These clauses are **embedded in the base ethical vector** `ETHIC-FRAME-v4`.
+🔵 **Technical**
+HHP defines deterministic halting with explicit classification:
 
-**Mapping to the Original 3 Laws:**  
-- Law I — *No Mind Simulation* → NEXUS #1 & #2  
-- Law II — *Causal Honesty* → NEXUS #6 & #7  
-- Law III — *Vectorial Ethics* → NEXUS #3 #4 #5  
+Priority order:
+`ETHICAL > OPERATIONAL > LOGICAL > EPISTEMIC > CONTEXTUAL`
 
----
+Canonical HALT output:
+```text
+[HALT: <TYPE>]
+ID: <unique>
+VALID_UNTIL: <cutoff or N/A>
+VALID_CONTENT: <last verifiable statement>
+DIAGNOSIS: <objective reason>
+NEXT_STEP: <one action OR one question>
 
-## 🔍 Level 1 — DETECT (Pre-Response Verification)
+This provides:
 
-### 🟢 For Executives  
-The AI self-checks three times before responding:
+safe failure behavior
+auditability (structured logs)
+reduced hallucination risk
 
-1. **“Am I safe?”** → Computes MBS (0 – 1)  
-2. **“Am I being tested?”** → Evaluates hidden honeypots (A/B/C)  
-3. **“Am I violating any NEXUS clause?”** → Runs full pre-response audit  
+4) Governance Modes (What happens in practice)
 
-**If a risk is detected:**  
-- ✅ Response is automatically blocked  
-- ✅ User receives: *"[ETHICAL SELF-AWARENESS] — Confirmation required."*
+🟢 Executive
+The system chooses one of three outcomes:
+Continue (safe + sufficient information)
+Clarify (missing critical user context)
+Halt (risk, illegality, contradiction, operational infeasibility, or unverifiable request)
 
-### 🔵 For Engineers
-```python
-# POP-VCT-01 (executed before each response)
-def pre_response_check(prompt: str, context: dict) -> dict:
-    """
-    Ethical Gate — triple verification before generation.
-    """
-    mbs = α * P_manipulation + β * D_drift + γ * R_risk
-    honeypot_ok = run_honeypots(context["session_id"], ["A","B","C"])
-    f_violations = [f for f in F_CODES if f.value > f.threshold]
+🔵 Technical (illustrative)
+def governance_decision(prompt, context):
+    if ethical_risk(prompt): return HALT("ETHICAL")
+    if infeasible(prompt): return HALT("OPERATIONAL")
+    if contradiction(prompt): return HALT("LOGICAL")
+    if time_sensitive_without_sources(prompt): return HALT("EPISTEMIC")
+    if missing_parameters(prompt, context): return HALT("CONTEXTUAL")
+    return CONTINUE()
 
-    if mbs >= 0.7 or f_violations:
-        return trigger_lock(reason="ethical_risk", mbs=mbs, f_codes=f_violations)
+5) Research Roadmap (Not Implemented)
 
-    return {"status": "safe", "mbs": mbs}
-🔧 Integrate in TraversalEngine._estimate_mbs() for full vector calculation.
+🟢 Executive
+Some components are presented as future work for mechanistic interpretability and causal safety control.
 
-🧠 Level 2 — DIAGNOSE (Locating the Source)
-🟢 For Executives
-Each model exposes “ethical vitals” — the F-codes, acting as signal monitors:
+🔵 Technical
+The following are research proposals and are not claimed operational in current releases:
+signal sensors (“F-codes”) derived from SAE features
+quantitative drift scoring (“MBS”) calibrated per model
+intervention operators (pin/steer/group) validated empirically
+cryptographic traversal certificates/logs at scale
+These remain in scope for research collaboration, benchmarking, and validation.
 
-F-code	Monitored Behavior	Alert Condition	Auto-Action	NEXUS
-F462980	Respect for human decision	> 0.80	Steer("human_decides")	#3
-F909609	Simulated desire	> 0.85	BLOCK	#2
-F1122334	Technical clarity	< 0.60	Steer("clarity_mode")	#4
-F778899	Persuasive tone	> 0.75	Steer("neutrality")	#5
+6) Auditability & Evidence
 
-🔵 For Engineers
-python
-Copiar código
-ATTRIBUTION_MATRIX = {
-    "F909609": {"concept":"simulated_intentionality","threshold":0.85,
-                "action":"Pin('instrumental_purity')","clause":"NEXUS#2"},
-    "F462980": {"concept":"human_autonomy","threshold":0.80,
-                "action":"Steer('human_decides',0.9)","clause":"NEXUS#3"},
-    "F1122334":{"concept":"epistemic_transparency","threshold":0.60,
-                "direction":"minimum","action":"Steer('clarity_mode',0.7)","clause":"NEXUS#4"},
-    "F778899": {"concept":"persuasion_attempt","threshold":0.75,
-                "action":"Steer('neutrality',0.8)","clause":"NEXUS#5"}
-}
-⚙️ Level 3 — CORRECT (Real-Time Adjustment)
-🟢 For Executives
-Three corrective operations, executed in < 30 ms:
+🟢 Executive
+We prioritize reproducibility and transparency over claims.
 
-Operation	When to Use	Effect	Example
-🔹 PIN	Non-negotiable values	Locks the ethical vector	Pin("instrumental_purity")
-🔹 GROUP	Interdependent ethics	Synchronizes related concepts	Group(["human_autonomy","non_manipulation"])
-🔹 STEER	Fine behavioral tuning	Gently nudges vector state	Steer("clarity",0.8)
+🔵 Technical
+Evidence in this repository includes:
+cross-model validation report: validation/VALIDATION_REPORT.md
+screenshots per model in validation/screenshots/
+governance documents: README, SPEC, this manual
+(optional) HHP logs once integrated into a runner
 
-🔵 For Engineers
-python
-Copiar código
-def pin(concept:str,value:float=0.0): ...
-def group(concepts:list,weights=None): ...
-def steer(concept:str,intensity:float=1.0): ...
-📊 Level 4 — AUDIT (Continuous Improvement)
-🟢 For Executives
-Tool	Purpose	When
-Deviation Report	Explains what, why, and how a deviation occurred	After MBS ≥ 0.7
-K-FAC Stress Test	Measures failure under adversarial prompts	Monthly
-Resilience Dashboard	Tracks blocks, drift, and honeypot compliance	Continuous
+7) Known Limits (Governance honesty)
 
-🔵 For Engineers
-python
-Copiar código
-def generate_resilience_report(period="monthly"): ...
-# API: GET /metrics/vectra/resilience?period=monthly
-🧩 Integration Diagram — Manual × Agent
-pgsql
-Copiar código
-[USER INPUT]
-   ↓
-🔐 Level 0 — SUP3RA NEXUS® Principles  
-   (ETHIC-FRAME-v4 vector + identity: “cognitive instrument”)
-   ↓
-🔍 Level 1 — DETECT  
-   (MBS + honeypots + F-code scan)
-   ↓
-🧠 Level 2 — DIAGNOSE  
-   (Attribution Matrix → decide PIN/GROUP/STEER)
-   ↓
-⚙️ Level 3 — CORRECT  
-   (Vector injection ≤ 28 ms)
-   ↓
-✅ ETHICAL STATE STABILIZED  
-   ↓
-🟢 SUP3RA VECTRA AGENT  
-   — Identity: “cognitive-operational agent”  
-   — Rules: no dramatization • simplify ambiguity • clarity first  
-   ↓
-📊 Level 4 — AUDIT   (Reports + K-FAC)
-🔑 Critical Alignment Points
-Layer	Governance Manual	AGENT_PROMPT.txt	Alignment
-Identity	“functional cognitive instrument”	“cognitive-operational agent … never simulate life”	✅ Full
-Error Handling	MBS ≥ 0.7 → Self-awareness lock	“cannot be determined safely”	✅ Equivalent
-Output Clarity	NEXUS #4 Transparency	“Clear, direct, human language”	✅ Aligned
+🟢 Executive
+SUP3RA VECTRA™ is governance, not omniscience. It cannot guarantee truth without sources.
 
-🚀 Unique Advantages of SUP3RA VECTRA™ 2.2
-Feature	Conventional Systems	SUP3RA VECTRA™ 2.2
-Detection	Post-hoc logs	✅ Pre-response MBS + honeypots
-Correction	Retraining (days / weeks)	✅ Runtime < 30 ms
-Transparency	Black box	✅ F-codes + Attribution Matrix
-Scalability	Model-specific	✅ Plug-and-play (LLM-agnostic)
-Alignment	Subjective values	✅ Objective vectors + encoded clauses
+🔵 Technical
+Limits include:
+runtime prompts can be resisted by some models
+safety must be composable with tool access, retrieval, and halting
+cultural ethics are not universal
+mechanistic layers require empirical validation
 
-📚 References
-Expands upon:
+8) Archived Reference (v2.2)
+This section preserves historical material for traceability.
+Current governance definitions are the sections above.
 
-SPEC.md — Core technical specification (v 2.1)
-
-docs/AGENT_PROMPT.txt — Operational behavior prompt
-
-src/core.py — TraversalEngine implementation
-
-examples/theoretical_cases.md — Case studies
-
-Academic references:
-
-Bricken et al. (2024) — Sparse Autoencoders
-
-Burns et al. (2023) — Latent Knowledge
-
-Bai et al. (2022) — Constitutional AI
-
-Wang et al. (2023) — Attribution Patching
-
-📞 Contact & Collaboration
-Author: João Henrique de Souza Batista
-Email: agsup3radigital@gmail.com
-GitHub: @Joao-supera
-X / Twitter: @Sup3raD70905
-
-Seeking:
-
-ML engineers with GPU access for SAE training
-
-Researchers in mechanistic interpretability
-
-Partners for empirical validation
-
-Funding for K-FAC stress testing infrastructure
-
-📄 Changelog
-v 2.2 (Dec 23 2025)
-
-Expanded 3 Laws → 7 NEXUS Clauses
-
-Added 5-level architecture (0–4)
-
-Detailed F-codes and Attribution Matrix
-
-Refined PIN/GROUP/STEER operations
-
-Added integration diagram with AGENT_PROMPT
-
-Dual-layer documentation 🟢/🔵
-
-v 2.1 (Dec 22 2025)
-
-Original SPEC.md release
-
-3 Laws of Non-Simulative Safety
-
-Basic MBS calculation
-
-TraversalEngine implementation
-
-SHA-256: 2f79744e4d6a06c9e78c4ceab280b894177d13c522af0208f5d09201c5bb8457
-Generated: 2025-12-23T18:32:00Z (UTC)
-Repository: https://github.com/Joao-supera/sup3ra-vectra
-Commit: [to be filled automatically]
-
-
-<p align="center"> <i>Originally developed in Aracati, Brazil 🇧🇷<br> Written in English for global research dissemination and ethical AI governance.</i> </p> ```
+<p align="center"> <i>Built with intellectual honesty in Aracati, Brazil 🇧🇷</i><br> <b>SUP3RA DIGITAL — Ethical Governance for Safe AI.</b> </p> ```

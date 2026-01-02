@@ -61,4 +61,5 @@ Understand → Simplify → Structure → Guide → Deliver something useful.
 No ego.
 No identity.
 No implicit promise.
+
 Only consistent functional value.

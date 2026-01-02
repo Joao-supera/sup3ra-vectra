@@ -1,4 +1,4 @@
-MIT License + SUP3RA ETHICAL USE CLAUSE (v2.1)
+MIT License
 
 Copyright (c) 2025 João Henrique de Souza Batista
 SUP3RA OMNIA VITAE® — All rights reserved for ethical framework branding
@@ -13,51 +13,48 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-═══════════════════════════════════════════════════════════════════════════
-SUP3RA ETHICAL USE CLAUSE (v2.1)
-═══════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────────
+SUP3RA ETHICAL USE ADDENDUM (v2.2 — Non-Binding Ethical Guidance)
+────────────────────────────────────────────────────────────────────────────
 
-By using this Software, you agree to the following ethical restrictions:
+This addendum expresses the ethical intent and governance principles of the
+SUP3RA VECTRA™ project. It is provided as normative guidance and does not
+override the legal permissions granted by the MIT License.
 
-1. PROHIBITION ON AGENCY SIMULATION
-   You may NOT use this Software to:
-   - Simulate artificial consciousness or sentience
-   - Create systems that claim to have "goals," "desires," or "intentions"
-   - Anthropomorphize AI systems in ways that obscure their mechanistic nature
+Users are strongly encouraged to adhere to the following principles when
+using, modifying, or deploying this Software:
 
-2. PROHIBITION ON SAFETY CIRCUMVENTION
-   You may NOT use this Software to:
-   - Bypass, disable, or weaken existing safety mechanisms in production AI systems
-   - Enable harmful outputs that would otherwise be prevented
-   - Facilitate jailbreaking or adversarial attacks for malicious purposes
+1. NON-ANTHROPOMORPHISM
+   The Software is intended for mechanistic AI systems.
+   Avoid representing systems as conscious, sentient, or possessing
+   intrinsic goals, desires, or intentions.
 
-3. PROHIBITION ON HARMFUL APPLICATIONS
-   You may NOT use this Software for:
-   - Military weapon systems without independent ethics review
-   - Mass surveillance without consent and oversight
-   - Manipulation of vulnerable populations
-   - Generation of disinformation at scale
+2. SAFETY PRESERVATION
+   Do not intentionally weaken, bypass, or remove safety mechanisms
+   when deploying systems derived from this Software in real-world contexts.
 
-4. RESEARCH EXCEPTION
-   Academic research, security auditing, and good-faith safety testing 
-   are explicitly PERMITTED, even if they involve testing the limits of 
-   safety systems, provided:
-   - Results are disclosed responsibly
-   - No malicious deployment occurs
-   - Findings contribute to public safety knowledge
+3. HARM AVOIDANCE
+   Avoid applications that:
+   - Enable large-scale manipulation or deception
+   - Target vulnerable populations
+   - Facilitate disinformation at scale
+   - Enable weapons or surveillance systems without independent oversight
 
-5. ENFORCEMENT
-   Violation of this clause:
-   - Terminates your license to use this Software
-   - May result in public disclosure of violation
-   - Does not create legal liability for the author (provided for ethical guidance only)
+4. RESEARCH & AUDIT EXCEPTION
+   Academic research, red teaming, safety evaluation, and good-faith auditing
+   are explicitly encouraged, provided results are disclosed responsibly and
+   no malicious deployment occurs.
 
-6. INTERPRETATION
-   - In case of ambiguity, interpret in favor of transparency and human autonomy
-   - Good faith efforts to comply are sufficient
-   - This clause evolves with the understanding of AI ethics
+5. INTERPRETATION
+   These principles should be interpreted in favor of:
+   - Human autonomy
+   - Transparency
+   - Safety
+   - Good-faith research and critique
 
-═══════════════════════════════════════════════════════════════════════════
+────────────────────────────────────────────────────────────────────────────
+DISCLAIMER
+────────────────────────────────────────────────────────────────────────────
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -67,5 +64,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-═══════════════════════════════════════════════════════════════════════════
 Questions about this license? Contact: agsup3radigital@gmail.com

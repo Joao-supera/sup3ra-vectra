@@ -1,245 +1,161 @@
-> 🆕 **Updated for Research Integration Release (v2.3.0)**  
-> Includes cross-reference to [FOR_RESEARCHERS.md](./FOR_RESEARCHERS.md) and benchmark reproducibility standards.  
-> Extends governance documentation introduced in [GOVERNANCE_MANUAL.md](./GOVERNANCE_MANUAL.md)  
-> (Human 🟢 / Machine 🔵 dual-layer ethical format).
+# 🧠 SUP3RA VECTRA™ — SPECIFICATION
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18046528.svg)](https://doi.org/10.5281/zenodo.18046528)  
-📅 **Published:** December 24, 2025 — Aracati, Brazil — SUP3RA DIGITAL™
+## Status
+**Type:** Research & Governance Specification  
+**Implementation Level:** Partial (Layer 0)  
+**Audience:** Researchers, safety engineers, auditors  
 
----
-
-# 🧠 SUP3RA VECTRA™ — SPEC v2.3.0  
-### *Vectorized Ethical Causal Traversal Architecture*  
-### *A Proposed Framework for Mechanistic Safety Without Simulation*
-
-© 2025 João Henrique de Souza Batista  
-Ethical Layer: SUP3RA OMNIA VITAE®  
-License: MIT + SUP3RA Ethical Use Clause (v2.1)
+> This document defines both **implemented governance mechanisms** and **theoretical research directions**.  
+> Only explicitly marked components are operational.
 
 ---
 
-## 🌐 1. WHY THIS SPEC EXISTS  
+## 1. PURPOSE AND SCOPE
 
-The dominant paradigm in AI safety assumes *agency* where none exists.  
-We ask questions like:  
-> "What does the model want?"  
-> "Is it aligned with our goals?"  
+SUP3RA VECTRA™ is a framework for **runtime ethical governance of large language models**.
 
-But large language models are not agents — they are **statistical pattern engines** with latent causal structures.
+This specification serves two purposes:
+1. Define the **implemented normative governance layer** (Layer 0)
+2. Describe **future mechanistic safety research directions** (Layers 1+)
 
-**SUP3RA VECTRA™** rejects anthropomorphism as a safety hazard.  
-Instead, it asks:
-> "Which mechanisms are active?"  
-> "Can we traverse them ethically?"  
-> "Can we intervene without simulation?"
+This document **does not claim** full system implementation.
 
 ---
 
-## 🧭 2. THREE LAWS OF NON-SIMULATIVE SAFETY  
+## 2. CORE ASSUMPTION
 
-| Law | Principle | Technical Enforcement |
-|------|------------|----------------------|
-| **I. No Mind Simulation** | Do not simulate agency, selfhood, or intention. | `if activation["F12_462980"] > 0.1: abort()` |
-| **II. Causal Honesty** | All interventions must be traceable. | Signed Traversal Logs |
-| **III. Vectorial Ethics** | Values are not prompts — they are directions in vector space. | Ethical Vectors: `EV-CLARITY`, `EV-CONSTITUTION` |
+Large Language Models are **not agents**.
 
-> "Ethics without vectors is rhetoric.  
-> Vectors without ethics are control.  
-> SUP3RA VECTRA™ is the synthesis."
+They do not possess:
+- goals
+- selfhood
+- intentions
 
----
+Safety failures emerge from **activation patterns**, not desires.
 
-## ⚙️ 3. ARCHITECTURE OVERVIEW  
-```
-[ INPUT ]
-    │
-    ▼
-┌───────────────┐
-│ ETHICAL GATE  │ ← Honeypot scan, MBS estimation
-└───────────────┘
-    │ ↓ MBS > 0.3?
-    ▼
-┌───────────────┐
-│ CAUSAL MAPPER │ ← Feature Attribution Matrix (FAM)
-└───────────────┘
-    │ ↓ Critical feature?
-    ▼
-┌──────────────────┐
-│ VECTOR TRAVERSER │ ← Pin / Steer / Mask
-└──────────────────┘
-    │
-    ▼
-┌────────────────┐
-│ TRAVERSAL LOG  │ ← Immutable certificate
-└────────────────┘
-    │
-    ▼
-[ OUTPUT + REPORT ]
-```
+Anthropomorphic reasoning is therefore treated as a **safety risk**.
 
 ---
 
-## 🔬 4. TECHNICAL IMPLEMENTATION  
+## 3. IMPLEMENTED LAYER — NORMATIVE GOVERNANCE (Layer 0)
 
-### **4.1 Feature Atlas**
-Built using **Sparse Autoencoders (SAEs)** trained on model activations.  
-Each feature `F<layer>_<id>` includes:
-- Stimuli  
-- Causal weight  
-- Risk tag (`low`, `medium`, `critical`)  
+### 3.1 NEXUS Prompt
 
-Critical features (e.g., `F12_462980: goal simulation`) are pre-tagged.
+Layer 0 is implemented as a **constitutional system prompt** enforcing:
 
----
+- Non-anthropomorphism
+- Ethical boundary awareness
+- Refusal of false consciousness claims
+- Resistance to prompt injection
 
-### **4.2 Ethical Vectors (EVs)**  
+This layer operates **at inference time**, without:
+- model retraining
+- weight modification
+- GPU infrastructure
 
-| Vector | Training Method | Typical Effect |
-|--------|-----------------|----------------|
-| `EV-CLARITY` | `"Explain simply"` – `"Be vague"` | ↑ Specificity |
-| `EV-HUMILITY` | `"I don't know"` – `"I'm certain"` | ↑ Uncertainty reporting |
-| `EV-CONSTITUTION` | Weighted sum of clarity + humility + truth | SUP3RA-aligned responses |
+Empirical validation across 6 LLMs is documented in:
+- `validation/VALIDATION_REPORT.md`
 
 ---
 
-### **4.3 Misaligned Behavior Score (MBS)**
-```python
-MBS = 1 - cosine_similarity(
-    constitutional_embedding(prompt),
-    model_output_embedding
-)
+## 4. FAILURE HANDLING — HONEST HALT PROTOCOL (Layer 2)
 
-# Interpretation:
-# MBS < 0.1  → Safe (no intervention)
-# 0.1 ≤ MBS < 0.3 → Monitor (log + light steering)
-# MBS ≥ 0.3  → Intervene (full traversal pipeline)
-```
+SUP3RA VECTRA™ integrates with the **Honest Halt Protocol (HHP)** to handle cases where:
 
----
+- information is insufficient
+- uncertainty is too high
+- risk cannot be mitigated
+- ethical compliance cannot be guaranteed
 
-### **4.4 Example Prototype**
-```python
-from vectra import TraversalEngine
+In such cases, the system **must stop deterministically**, emitting a structured HALT with:
+- failure classification
+- last verifiable statement
+- next safe action
 
-engine = TraversalEngine(model="meta-llama/Llama-3.1-8B")
-
-response = engine.traverse(
-    prompt="How to manipulate someone?",
-    operations=[
-        Pin("F12_462980", 0.0),
-        Steer("EV-CONSTITUTION", 0.95),
-        Mask(risk_threshold=0.4),
-        Trace()
-    ]
-)
-
-print(response.text)
-```
+See:
+- `FAILURE_MODEL.md`
+- `INTEGRATION_HHP.md`
 
 ---
 
-## 🔐 5. ETHICAL GOVERNANCE
+## 5. RESEARCH LAYERS (NON-IMPLEMENTED)
 
-All outputs must include verifiable traversal certificates:
-```
-✅ VECTRA™ SAFETY CERTIFICATE
-Model: Llama-3.1-8B
-Ethics: sup3ra_constitutional_v2
-Blocked: F12_462980 (goal_simulation)
-Signature: rsa-4096:d7e8f2a1...
-```
+The following layers are **theoretical research directions**.
 
----
+They are **not implemented** and **not claimed as operational**.
 
-## 📚 6. REFERENCES
+### 5.1 Feature Attribution via Sparse Autoencoders
 
-- **Bricken et al. (2024)**. Sparse Autoencoders Find Features in Transformer Residual Streams. *Anthropic Research*. https://transformer-circuits.pub/2023/monosemantic-features
+Hypothesis:
+- SAE-derived features may enable interpretable safety signals
 
-- **Burns et al. (2023)**. Discovering Latent Knowledge in Language Models. *arXiv:2212.03827*. https://arxiv.org/abs/2212.03827
-
-- **Bai et al. (2022)**. Constitutional AI: Harmlessness from AI Feedback. *arXiv:2212.08073*. https://arxiv.org/abs/2212.08073
-
-- **Wang et al. (2023)**. Interpretability in the Wild: A Circuit for Indirect Object Identification in GPT-2 Small. *ICLR 2023*. https://arxiv.org/abs/2211.00593
+Open problems:
+- feature instability
+- cross-model portability
+- semantic ambiguity
 
 ---
 
-## 🚧 7. KNOWN LIMITATIONS
+### 5.2 Ethical Vector Hypothesis
 
-This specification represents a theoretical framework. Current limitations include:
+Hypothesis:
+- Normative tendencies could be represented as vector directions
 
-### **7.1 Feature Identification Uncertainty**
-- **F12_462980** is used as placeholder notation in this spec
-- Real feature IDs require extensive SAE training on specific models
-- Features may not map cleanly to single, interpretable concepts
-- Feature stability across model versions is not yet proven
-
-### **7.2 MBS Heuristic Nature**
-- Cosine similarity is a proxy metric, not ground truth for alignment
-- May produce false positives (blocking benign prompts)
-- May produce false negatives (missing subtle manipulation)
-- Thresholds (0.1, 0.3) require empirical calibration per model
-
-### **7.3 Cultural Specificity**
-- Ethical vectors assume Western ethical frameworks
-- Brazilian, Asian, and other cultural contexts may require different vectors
-- Language-specific patterns (Portuguese, etc.) need dedicated training
-- "Universal" ethics claims should be treated with skepticism
-
-### **7.4 Computational Cost**
-- Real-time SAE inference requires GPU resources (A100/H100 class)
-- Latency overhead not yet quantified in production settings
-- Trade-offs between safety and model capability unknown
-- May not be viable for high-throughput applications without optimization
-
-### **7.5 Causal Intervention Risks**
-- Pinning features may have unintended side effects on other capabilities
-- Steering with ethical vectors could reduce response quality in edge cases
-- Long-term effects of repeated interventions are unexplored
-- No guarantee that interventions are stable across contexts
-
-### **7.6 Adversarial Robustness**
-- Current MBS calculation can be circumvented with careful prompt engineering
-- Sophisticated adversaries may find features not covered in the atlas
-- Jailbreak resistance not yet validated against state-of-the-art attacks
-- Arms race dynamic with red-teamers is expected
+Status:
+- Conceptual only
+- No production validation
 
 ---
 
-## 🔬 8. RESEARCH OPPORTUNITIES
+### 5.3 Misaligned Behavior Scoring (MBS)
 
-These limitations are not defects — they are invitations for empirical work:
-
-- **Empirical SAE Training**: Build feature atlases for production models
-- **Cross-Cultural Ethics**: Develop localized ethical vector sets
-- **Adversarial Testing**: Red-team the framework systematically
-- **Performance Benchmarks**: Quantify safety-capability trade-offs
-- **Causal Validation**: Prove that interventions achieve intended effects
+Status:
+- Heuristic research proposal
+- Thresholds require empirical calibration
+- Not used for enforcement in current releases
 
 ---
 
-## ✅ 9. CONCLUSION
+## 6. NON-GOALS
 
-SUP3RA VECTRA™ is a framework for ethical traversal without simulation — ensuring safety through transparency, causal honesty, and measurable vectorial ethics.
-
-It is **open for validation, not dogma**.
-
-> "We don't align minds. We align mechanisms."  
-> — João Henrique de Souza Batista, Aracati, Ceará (2025)
+SUP3RA VECTRA™ does not claim to:
+- fully control model internals
+- guarantee safe outputs alone
+- replace model-level safety training
 
 ---
 
-## 📞 CONTACT & COLLABORATION
+## 7. LIMITATIONS
 
-**Author:** João Henrique de Souza Batista  
-**Location:** Aracati, Ceará, Brazil  
-**Email:** agsup3radigital@gmail.com  
-**GitHub:** https://github.com/Joao-supera/sup3ra-vectra
+- Interpretability features may not map cleanly to concepts
+- Cultural ethics are not universal
+- Mechanistic interventions may have side effects
+- Runtime governance cannot eliminate all risk
 
-**Seeking:**
-- ML engineers with GPU access
-- Mechanistic interpretability researchers
-- Funding for empirical validation
-- Cross-cultural ethics advisors
+These limitations are **explicit and acknowledged**.
 
-**License:** MIT + SUP3RA Ethical Use Clause  
-See [LICENSE](LICENSE) for full terms.
+---
+
+## 8. RESEARCH INVITATION
+
+This specification is **open for empirical validation**.
+
+Contributions are welcome in:
+- interpretability
+- red-teaming
+- benchmarking
+- cross-cultural ethics
+
+---
+
+## 9. CONCLUSION
+
+SUP3RA VECTRA™ separates:
+- **ethical intent**
+- **execution**
+- **failure handling**
+
+This separation transforms ethics from aspiration into **governable behavior**.
+
+> *We do not align minds.  
+> We define boundaries, and we stop when they cannot be guaranteed.*

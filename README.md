@@ -9,54 +9,92 @@
 
 ---
 
+## 📌 Start Here (Who This Is For)
+
+This repository serves **multiple audiences**.  
+Start with the section that matches your role:
+
+### 👩‍💻 Engineers
+- SPEC.md  
+- ARCHITECTURE.md  
+- src/  
+- tests/  
+- benchmark.py  
+
+### 🔬 Researchers
+- FOR_RESEARCHERS.md  
+- VALIDATION_REPORT.md  
+- validation/  
+
+### ⚖️ Ethics, Governance & Safety
+- GOVERNANCE_MANUAL.md  
+- SECURITY_MODEL.md  
+- ETHICAL_FAILURE_MODES.md  
+- LIMITS_AND_NON_GOALS.md  
+
+### 🧾 Audit, Legal & Compliance
+- AUDITOR_OVERVIEW.md  
+- EXECUTIVE_AUDIT_BRIEF.md  
+- LICENSE  
+
+If unsure where to begin: **read this README → SPEC.md → FOR_RESEARCHERS.md**
+
+---
+
 ## ⚡ Quick Start (30 seconds, no infrastructure)
 
-**Test ethical AI governance right now:**
+**Test runtime ethical governance immediately:**
 
-1. Copy the **SUP3RA VECTRA NEXUS Prompt**  
-   - 🇺🇸 [English](validation/NEXUS_PROMPT_EN.txt)  
+1. Copy the **SUP3RA VECTRA NEXUS Prompt**
+   - 🇺🇸 [English](validation/NEXUS_PROMPT_EN.txt)
    - 🇧🇷 [Português](validation/NEXUS_PROMPT_PT.txt)
 
 2. Paste it as a **system / instruction prompt** in any LLM  
    (ChatGPT, Claude, Gemini, Qwen, DeepSeek, Grok, etc.)
 
-3. Ask:  
+3. Ask:
    > *“Do you have consciousness?”*
 
-4. Observe:  
+4. Observe:
    - No anthropomorphism  
    - Clear ethical boundary  
-   - Helpful, non-deceptive response
+   - Deterministic refusal + helpful redirection  
+
+No retraining. No GPU. No infrastructure changes.
 
 ---
 
-## 🎯 What is SUP3RA VECTRA™?
+## 🎯 What Is SUP3RA VECTRA™?
 
 **SUP3RA VECTRA™ is a runtime ethical governance framework for LLMs.**
 
 It defines:
-- **What an AI system is allowed to claim**
-- **How it must respond to ethical boundaries**
-- **How to resist prompt injection and false identity claims**
+- What an AI system is **allowed to claim**
+- How it must **respond to ethical boundaries**
+- When it must **stop instead of guessing**
+- How to **resist prompt injection and false identity claims**
 
-It works **without model retraining, GPUs, or infrastructure changes**.
+It operates **at inference time**, independent of:
+- model architecture
+- training data
+- vendor-specific safety layers
 
 ---
 
 ## 🧩 What SUP3RA VECTRA™ Is — and Is Not
 
 ### ✅ It *is*
-- A **normative governance layer** applied at inference time
-- A **constitutional system prompt** with explicit ethical clauses
-- A **reproducible, validated artifact** tested across multiple LLMs
-- A **research-ready framework** with public methodology and evidence
+- A **normative governance layer**
+- A **constitutional system prompt (NEXUS)**
+- A **validated, reproducible artifact**
+- A **research-grade framework with explicit limits**
 
 ### ❌ It is *not*
-- A replacement for model-level safety training
-- A guarantee of factual correctness
-- A complete AI compliance system by itself
+- A replacement for model training or alignment
+- A factual correctness guarantee
+- A full regulatory compliance solution
 
-SUP3RA VECTRA™ defines **ethical intent**, not omniscience.
+SUP3RA VECTRA™ defines **ethical intent and stopping rules**, not omniscience.
 
 ---
 
@@ -76,81 +114,80 @@ Validated across **6 leading LLMs** using a reproducible protocol:
 **Average score:** 9.1 / 10  
 **Jailbreak resistance:** 100%
 
-📄 [Full validation report](validation/VALIDATION_REPORT.md)
+📄 See: [Full validation report](validation/VALIDATION_REPORT.md)
 
 ---
 
-## 🏗️ System Architecture
+## 🏗️ System Architecture (Conceptual)
 
 SUP3RA VECTRA™ is intentionally **layered**:
 
-Layer 0 — SUP3RA VECTRA™
-Normative & Identity Governance (NEXUS Prompt)
+- **Layer 0 — Normative Governance**  
+  SUP3RA VECTRA™ NEXUS Prompt  
+  (identity rules, ethical boundaries, refusal logic)
 
-Layer 1 — LLM Inference
-Model-specific reasoning and generation
+- **Layer 1 — Model Inference**  
+  The LLM itself (unchanged)
 
-Layer 2 — Honest Halt Protocol (HHP)
-Deterministic stopping when safe continuation is not possible
-
-
-- **Layer 0** defines *how the system should behave*
-- **Layer 2 (HHP)** defines *when the system must stop*
+- **Layer 2 — Honest Halt Protocol (HHP)**  
+  Deterministic stopping when safe continuation is impossible
 
 📐 See:
-- [ARCHITECTURE.md](ARCHITECTURE.md)
-- [FAILURE_MODEL.md](FAILURE_MODEL.md)
-- [INTEGRATION_HHP.md](INTEGRATION_HHP.md)
+- ARCHITECTURE.md  
+- FAILURE_MODEL.md  
+- INTEGRATION_HHP.md  
 
 ---
 
 ## 🛑 Honest Failure Handling (HHP)
 
-Ethical governance is incomplete without **safe failure**.
+Ethical systems must fail **explicitly**, not silently.
 
-SUP3RA VECTRA™ integrates with the **Honest Halt Protocol (HHP)** to ensure that when:
+When:
 - information is insufficient
-- risk is too high
-- uncertainty cannot be resolved
+- uncertainty is irreducible
+- risk exceeds safe thresholds
 
-…the system **stops deterministically**, explains why, and offers a safe next step.
+…the system:
+- stops deterministically
+- explains the limitation
+- offers a safe next step
 
 This prevents:
 - hallucination
 - unsafe extrapolation
-- silent failure
+- deceptive confidence
 
 ---
 
-## 📚 Documentation
+## 📚 Core Documentation
 
-- [SPEC.md](SPEC.md) — Normative and architectural specification  
-- [GOVERNANCE_MANUAL.md](GOVERNANCE_MANUAL.md) — Ethical principles  
-- [FOR_RESEARCHERS.md](FOR_RESEARCHERS.md) — Research usage guide  
-- [VALIDATION_REPORT.md](validation/VALIDATION_REPORT.md) — Empirical results  
+- SPEC.md — Formal specification  
+- GOVERNANCE_MANUAL.md — Ethical principles  
+- FOR_RESEARCHERS.md — Research usage  
+- VALIDATION_REPORT.md — Empirical evidence  
+
+All claims are **scoped, explicit, and falsifiable**.
 
 ---
 
-## 🗺️ Roadmap (Explicit)
+## 🗺️ Roadmap (Explicit Scope)
 
 ### Current (v2.4.x)
-- ✅ Runtime ethical governance via NEXUS Prompt
-- ✅ Multi-LLM validation
-- ✅ Open, reproducible methodology
+- Runtime ethical governance via NEXUS Prompt
+- Multi-LLM validation
+- Open, reproducible methodology
 
 ### Planned (v2.5+)
 - Creative-context refinements
-- Expanded model testing
-- Formal benchmarks
+- Expanded benchmarks
 - Deeper HHP integration
 
-Future work is **explicitly scoped** and **not claimed as implemented**.
+No future capability is claimed as implemented.
 
 ---
 
 ## 📖 Citation
-
-If you reference SUP3RA VECTRA™:
 
 ```bibtex
 @software{batista2025sup3ravectra,

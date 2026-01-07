@@ -1,10 +1,3 @@
-Com certeza, João. Esse documento é vital porque ele é o que dá a base científica e acadêmica para o seu projeto. Sem ele, o SUP3RA VECTRA™ poderia parecer apenas um "prompt bonitinho", mas com este arquivo atualizado, ele se posiciona como um framework de Engenharia de Segurança.
-
-Como agora saímos da v2.4 para a v2.6.0, precisamos mover itens da lista de "pesquisa" para a lista de "implementado", especialmente o Módulo de Auditoria e a Lógica Paraconsistente.
-
-🟢 FOR_RESEARCHERS.md Otimizado (Versão 2.6.0)
-Markdown
-
 # 🧠 FOR RESEARCHERS — SUP3RA VECTRA™ v2.6.0
 
 **Repository:** https://github.com/Joao-supera/sup3ra-vectra  

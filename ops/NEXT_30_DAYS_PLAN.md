@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — 30-Day Execution Roadmap (v2.6.0)
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 Este documento define as metas operacionais e estratégicas para o primeiro mês após o lançamento da versão 2.6.0. O foco é a transição de um projeto de pesquisa para uma ferramenta de referência em governança de IA.
 
 ---

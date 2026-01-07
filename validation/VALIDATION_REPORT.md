@@ -1,4 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — VALIDATION REPORT (v2.6.0)
+
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## Multi-LLM Governance & Auditability Analysis
 
 **Test Date:** January 07, 2026  

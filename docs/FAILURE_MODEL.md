@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Failure Model (v2.6.0)
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## Purpose
 
 Este documento define os **modos de falha esperados** do SUP3RA VECTRA™ e como o sistema responde de forma segura e determinística. Tratamos a falha como um **elemento de design de primeira classe**, não como uma exceção.

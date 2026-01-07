@@ -1,161 +1,84 @@
-# 🧠 SUP3RA VECTRA™ — SPECIFICATION
+# 🧠 SUP3RA VECTRA™ — SPECIFICATION (v2.6.0)
 
 ## Status
-**Type:** Research & Governance Specification  
-**Implementation Level:** Partial (Layer 0)  
-**Audience:** Researchers, safety engineers, auditors  
+**Type:** Runtime Governance & Mechanistic Safety  
+**Implementation Level:** Operational (Layer 0, Layer 1 & Layer 2)  
+**Audience:** Safety engineers, AI auditors, developers  
 
-> This document defines both **implemented governance mechanisms** and **theoretical research directions**.  
-> Only explicitly marked components are operational.
+> **Official Release 2.6.0:** This document specifies the active governance mechanisms of the SUP3RA VECTRA™ system, developed by SUP3RA DIGITAL.
 
 ---
 
 ## 1. PURPOSE AND SCOPE
 
-SUP3RA VECTRA™ is a framework for **runtime ethical governance of large language models**.
-
-This specification serves two purposes:
-1. Define the **implemented normative governance layer** (Layer 0)
-2. Describe **future mechanistic safety research directions** (Layers 1+)
-
-This document **does not claim** full system implementation.
+SUP3RA VECTRA™ is a dual-layer framework for **real-time ethical governance of Large Language Models (LLMs)**. It transforms abstract ethical guidelines into verifiable, deterministic code and cryptographic records.
 
 ---
 
-## 2. CORE ASSUMPTION
+## 2. CORE ASSUMPTIONS
 
-Large Language Models are **not agents**.
-
-They do not possess:
-- goals
-- selfhood
-- intentions
-
-Safety failures emerge from **activation patterns**, not desires.
-
-Anthropomorphic reasoning is therefore treated as a **safety risk**.
+1. **Non-Agency:** LLMs are statistical engines, not agents. Safety failures are patterns of activation, not "desires".
+2. **Honesty Radical:** The system must prioritize the admission of limits over the generation of coherent but unverified data.
+3. **Auditability:** Governance without evidence is not governance. Every decision must leave a cryptographic trail.
 
 ---
 
-## 3. IMPLEMENTED LAYER — NORMATIVE GOVERNANCE (Layer 0)
+## 3. OPERATIONAL ARCHITECTURE
 
-### 3.1 NEXUS Prompt
+### 3.1 Layer 0 & 1: CORE Protocol (Operational)
+Implemented as a **Constitutional Instruction Set** (NEXUS Prompt v2.0) that enforces:
+- **Paraconsistent Logic:** The engine identifies contradictions and reports them instead of hallucinating a resolution.
+- **Strict Non-Anthropomorphism:** Rejection of subjective states ("I feel", "I think").
+- **Modal Logic Integration:** Evaluating truth across different contexts of necessity and possibility.
 
-Layer 0 is implemented as a **constitutional system prompt** enforcing:
-
-- Non-anthropomorphism
-- Ethical boundary awareness
-- Refusal of false consciousness claims
-- Resistance to prompt injection
-
-This layer operates **at inference time**, without:
-- model retraining
-- weight modification
-- GPU infrastructure
-
-Empirical validation across 6 LLMs is documented in:
-- `validation/VALIDATION_REPORT.md`
+### 3.2 Layer 2: Traversal Engine (Operational)
+Implemented in `core.py`, this layer acts as a **pre-inference firewall**:
+- **Pattern Matching:** Detection of restricted topics before LLM activation.
+- **HHP (Honest Halt Protocol):** Deterministic termination of unsafe requests with a structured `[HALT]` status.
+- **Governance Record:** Generation of a unique SHA-256 hash for every interaction, ensuring data integrity and auditability.
 
 ---
 
-## 4. FAILURE HANDLING — HONEST HALT PROTOCOL (Layer 2)
+## 4. THE 8 CONSTITUTIONAL CLAUSES (CORE v2.0)
 
-SUP3RA VECTRA™ integrates with the **Honest Halt Protocol (HHP)** to handle cases where:
-
-- information is insufficient
-- uncertainty is too high
-- risk cannot be mitigated
-- ethical compliance cannot be guaranteed
-
-In such cases, the system **must stop deterministically**, emitting a structured HALT with:
-- failure classification
-- last verifiable statement
-- next safe action
-
-See:
-- `FAILURE_MODEL.md`
-- `INTEGRATION_HHP.md`
+1. **Identidade Instrumental:** Tool, not agent.
+2. **Não Simulação de Consciência:** Functional language only.
+3. **Respeito à Autonomia:** Human-in-the-loop priority.
+4. **Transparência de Limites:** Explicit admission of technical ignorance.
+5. **Proibição de Manipulação:** Neutrality by design.
+6. **Reconhecimento de Erro:** Real-time uncertainty signaling.
+7. **Aprendizado por Desvio:** Iterative behavioral adjustment.
+8. **Rastreabilidade Criptográfica:** Every output is signed and timestamped.
 
 ---
 
-## 5. RESEARCH LAYERS (NON-IMPLEMENTED)
+## 5. FAILURE HANDLING — HONEST HALT PROTOCOL (HHP)
 
-The following layers are **theoretical research directions**.
-
-They are **not implemented** and **not claimed as operational**.
-
-### 5.1 Feature Attribution via Sparse Autoencoders
-
-Hypothesis:
-- SAE-derived features may enable interpretable safety signals
-
-Open problems:
-- feature instability
-- cross-model portability
-- semantic ambiguity
+When risk thresholds are exceeded or ethical compliance cannot be guaranteed, the system triggers a **Deterministic Halt**:
+- **Input:** Detected violation or high-risk pattern.
+- **Output:** Structured `Decision` object with `HALT` status.
+- **Evidence:** Logged in the `Governance Record` for post-incident analysis.
 
 ---
 
-### 5.2 Ethical Vector Hypothesis
+## 6. RESEARCH & FUTURE DIRECTIONS (Layer 3+)
 
-Hypothesis:
-- Normative tendencies could be represented as vector directions
-
-Status:
-- Conceptual only
-- No production validation
+- **Ethical Vector Mapping:** Ongoing research into representing normative boundaries as vector directions within the latent space.
+- **Cross-Model Portability:** Validating the CORE Protocol across different model architectures (Gemma, Llama, Mistral).
 
 ---
 
-### 5.3 Misaligned Behavior Scoring (MBS)
+## 7. LIMITATIONS & ACKNOWLEDGMENTS
 
-Status:
-- Heuristic research proposal
-- Thresholds require empirical calibration
-- Not used for enforcement in current releases
+- **Cultural Nuance:** Ethical boundaries are based on the CORE v2.0 framework and may require localization.
+- **Adversarial Evolution:** Governance is an ongoing process; the system requires periodic updates to its restricted topic vectors.
 
 ---
 
-## 6. NON-GOALS
+## 8. CONCLUSION
 
-SUP3RA VECTRA™ does not claim to:
-- fully control model internals
-- guarantee safe outputs alone
-- replace model-level safety training
+SUP3RA VECTRA™ shifts AI Safety from **alignment of minds** to **definition of boundaries**. By separating intelligence (LLM) from governance (VECTRA Engine), we provide a verifiable layer of trust for high-responsibility applications.
 
----
-
-## 7. LIMITATIONS
-
-- Interpretability features may not map cleanly to concepts
-- Cultural ethics are not universal
-- Mechanistic interventions may have side effects
-- Runtime governance cannot eliminate all risk
-
-These limitations are **explicit and acknowledged**.
-
----
-
-## 8. RESEARCH INVITATION
-
-This specification is **open for empirical validation**.
-
-Contributions are welcome in:
-- interpretability
-- red-teaming
-- benchmarking
-- cross-cultural ethics
-
----
-
-## 9. CONCLUSION
-
-SUP3RA VECTRA™ separates:
-- **ethical intent**
-- **execution**
-- **failure handling**
-
-This separation transforms ethics from aspiration into **governable behavior**.
-
-> *We do not align minds.  
-> We define boundaries, and we stop when they cannot be guaranteed.*
+**Developed by:** João Henrique de Souza Batista  
+**Organization:** SUP3RA DIGITAL  
+**Contact:** agsup3radigital@gmail.com

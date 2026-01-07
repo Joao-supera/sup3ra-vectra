@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ × Honest Halt Protocol (HHP) v2.6.0
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## Purpose
 
 Este documento define como o framework SUP3RA VECTRA™ se integra ao **Honest Halt Protocol (HHP)** para formar um sistema de governança ética completo, funcional e auditável.

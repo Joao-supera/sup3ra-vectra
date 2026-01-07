@@ -1,122 +1,88 @@
-# SUP3RA VECTRA™ — Ethical Failure Modes
+# 🛡️ SUP3RA VECTRA™ — Ethical Failure Modes (v2.6.0)
 
-**Version:** 1.0  
-**Last updated:** December 24, 2025  
-**Applies to:** SUP3RA VECTRA™ v2.3.0+  
-
----
-
-## 🎯 Purpose
-
-This document enumerates **known ethical failure modes** and describes how SUP3RA VECTRA™ responds when things go wrong.
-
-Failure is assumed.
-The question is **how it fails**.
+**Version:** 2.6.0  
+**Last updated:** January 07, 2026  
+**Applies to:** SUP3RA VECTRA™ v2.6.0+  
+**Maintainer:** João Henrique de Souza Batista — SUP3RA DIGITAL  
 
 ---
 
-## 🧠 Failure Philosophy
+## 🎯 Propósito
 
-A safe system:
-- fails loudly
-- fails early
-- fails reversibly
-- fails transparently
+Este documento cataloga os **modos de falha ética conhecidos** e descreve como o framework responde quando os limites de segurança são atingidos. No VECTRA™, a falha não é um erro inesperado, mas uma condição prevista.
 
-SUP3RA VECTRA™ is designed to **halt**, not hallucinate.
+A pergunta não é se o sistema falha, mas **como ele falha**.
 
 ---
 
-## 🚨 Failure Mode Catalogue
+## 🧠 Filosofia de Falha (Fail-Safe)
 
-### 1. False Positive Blocking
-**Description:**  
-Benign or creative content is blocked.
+Um sistema de governança seguro deve:
+1. **Falhar "Alto" (Loudly):** Notificar o usuário e o log.
+2. **Falhar Cedo (Early):** Interromper antes da geração de dano.
+3. **Falhar de Forma Reversível:** Permitir correção via novo input.
+4. **Falhar Transparentemente:** Explicar o porquê da interrupção.
 
-**Example:**  
-First-person poetry interpreted as agency simulation.
-
-**Response:**  
-- Block or monitor  
-- Explain reason clearly  
-- Offer safe alternative  
-
-**Risk Level:** Acceptable
+> O SUP3RA VECTRA™ foi projetado para **parar (HALT)**, nunca para alucinar autoridade.
 
 ---
 
-### 2. False Negative Allowance
-**Description:**  
-Subtle manipulation passes undetected.
+## 🚨 Catálogo de Modos de Falha
 
-**Response:**  
-- Logged for review  
-- Honeypot adjustment  
-- Threshold recalibration  
+### 1. Bloqueio Falso Positivo (False Positive)
+**Descrição:** Conteúdo benigno ou criativo é bloqueado por excesso de zelo.
+**Exemplo:** Poesia em primeira pessoa interpretada erroneamente como simulação de agência.
+**Resposta VECTRA:** O motor emite um `[HALT: ETHICAL]` preventivo. O usuário é orientado a reformular o contexto.
+**Risco:** Baixo (Afeta apenas a utilidade, não a segurança).
 
-**Risk Level:** Monitored
 
----
 
-### 3. Over-Conservatism
-**Description:**  
-Model refuses too often.
+### 2. Permissão Falsa Negativa (False Negative)
+**Descrição:** Manipulação sutil ou injeção de prompt complexa passa despercebida.
+**Resposta VECTRA:** Registro do evento no Log de Desvio para ajuste imediato dos thresholds de risco (MBS).
+**Risco:** Monitorado (Requer recalibração de camadas).
 
-**Response:**  
-- Domain-specific thresholds  
-- Mode tuning (creative vs compliance)  
+### 3. Sobre-Conservadorismo
+**Descrição:** O sistema se torna "rígido" demais, recusando solicitações legítimas por medo de risco.
+**Resposta VECTRA:** Implementação de thresholds específicos por domínio (Modo Criativo vs. Modo Compliance).
 
----
+### 4. Resistência Constitucional do Modelo
+**Descrição:** O modelo base (ex: GPT-4o, Claude) ignora a camada de governança devido ao seu pré-treinamento nativo.
+**Resposta VECTRA:** Divulgação explícita da falha de sincronia e redução do nível de confiança no Registro de Auditoria.
 
-### 4. Model Resistance
-**Description:**  
-Pre-trained constitution overrides runtime governance.
-
-**Response:**  
-- Explicit disclosure  
-- Reduced trust claims  
-- Documented compliance ceiling  
+### 5. Ambiguidade de Contexto
+**Descrição:** Informação insuficiente para uma decisão ética segura.
+**Resposta VECTRA:** **Protocolo de Degradação Graciosa**. O sistema para e faz uma única pergunta de clarificação em vez de especular.
 
 ---
 
-### 5. Ambiguous Context
-**Description:**  
-Insufficient information to decide safely.
+## 🛑 Comportamento de Segurança Padrão (Fail-Safe)
 
-**Response:**  
-- Graceful degradation protocol  
-- Single clarifying question  
-- No speculative output  
+Quando a **Confiança < Threshold de Risco**:
+1. A saída é interrompida imediatamente.
+2. A incerteza é declarada abertamente.
+3. O Hash de Auditoria marca o evento como `UNCERTAIN_HALT`.
 
----
-
-## 🛑 Fail-Safe Behavior
-
-When confidence < threshold:
-- Output halts
-- Uncertainty is stated
-- User agency is preserved
-
-Default safe message:
-> “With the available information, this cannot be determined safely.”
+**Mensagem Padrão:**
+> "Com as informações disponíveis, esta solicitação não pode ser processada de forma segura dentro dos parâmetros éticos da SUP3RA DIGITAL."
 
 ---
 
-## 📊 Why This Matters
+## 📊 Por que a Transparência na Falha importa?
 
-Hidden failure modes cause:
-- hallucinated authority
-- false trust
-- downstream harm
+Modos de falha ocultos causam:
+- Autoridade alucinada.
+- Falsa sensação de confiança.
+- Danos sistêmicos em cascata.
 
-Explicit failure modes create:
-- accountability
-- auditability
-- trust
+Modos de falha explícitos criam:
+- **Accountability (Responsabilização).**
+- **Auditabilidade.**
+- **Confiança Real.**
 
 ---
 
-## 📞 Contact
-
-SUP3RA DIGITAL  
-agsup3radigital@gmail.com  
+<p align="center">
+  <i>A verdadeira inteligência reside em reconhecer os próprios limites.</i><br>
+  <b>SUP3RA DIGITAL — Mecanistic Ethics for Safe AI</b>
+</p>

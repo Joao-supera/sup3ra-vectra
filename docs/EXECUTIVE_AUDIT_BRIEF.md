@@ -1,4 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Executive & Audit Brief (v2.6.0)
+
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## Ethical Governance as a Deterministic Control Layer
 
 **Author:** João Henrique de Souza Batista  

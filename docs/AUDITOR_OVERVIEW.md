@@ -1,11 +1,3 @@
-Este é o documento final que faltava: a visão para Gestores e Advogados. Ele traduz a complexidade técnica em redução de risco e conformidade legal.
-
-Na versão 2.6.0, o grande trunfo para este público é que a auditoria não é mais apenas "possível", ela é criptograficamente garantida pelo motor que você criou.
-
-Aqui está o seu arquivo COMPLIANCE.md (v2.6.0) em formato de código:
-
-Markdown
-
 # 🛡️ SUP3RA VECTRA™ — Auditor & Compliance Overview (v2.6.0)
 
 **Audience:** Legal, Compliance, Risk Management, Corporate Auditors  

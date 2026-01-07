@@ -1,5 +1,7 @@
 # 📍 START HERE — SUP3RA VECTRA™ Navigation Guide
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 Este repositório é intencionalmente modular e denso. **Você NÃO precisa ler tudo.** Escolha o seu perfil abaixo e siga a trilha recomendada para economizar tempo.
 
 ---

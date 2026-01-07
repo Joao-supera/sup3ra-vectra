@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Project Status (v2.6.0)
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 **Last updated:** January 07, 2026  
 **Current Release:** **v2.6.0 — Operational Governance Release** **Maintainer:** João Henrique de Souza Batista — SUP3RA DIGITAL  
 **Location:** Aracati, Ceará, Brazil 🇧🇷  

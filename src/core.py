@@ -1,7 +1,7 @@
 """
 SUP3RA VECTRA™ — Traversal Engine Core (v2.6.0)
 Integrado ao Constitutional Protocol v2.0
-DOI: 10.5281/zenodo.18046528
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
 
 © 2026 João Henrique de Souza Batista | SUP3RA DIGITAL
 """

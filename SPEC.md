@@ -1,5 +1,7 @@
 # 🧠 SUP3RA VECTRA™ — SPECIFICATION (v2.6.0)
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## Status
 **Type:** Runtime Governance & Mechanistic Safety  
 **Implementation Level:** Operational (Layer 0, Layer 1 & Layer 2)  

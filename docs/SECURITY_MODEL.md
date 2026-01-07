@@ -1,130 +1,85 @@
-# SUP3RA VECTRA™ — Security Model & Threat Analysis
+# 🛡️ SUP3RA VECTRA™ — Security Model & Threat Analysis (v2.6.0)
 
-**Version:** 1.0  
-**Last updated:** December 24, 2025  
-**Applies to:** SUP3RA VECTRA™ v2.3.0+  
+**Version:** 2.6.0  
+**Last updated:** January 07, 2026  
+**Applies to:** SUP3RA VECTRA™ v2.6.0+  
 **Maintainer:** João Henrique de Souza Batista — SUP3RA DIGITAL  
-**DOI (project):** 10.5281/zenodo.18046528  
 
 ---
 
 ## 🎯 Purpose
 
-This document defines the **explicit security assumptions, threat model, and failure boundaries** of SUP3RA VECTRA™.
-
-It answers:
-- What threats are considered
-- What attacks are mitigated
-- What is *not* guaranteed
-
-This is **not marketing**.  
-This is an engineering security artifact.
+Este documento define as **premissas de segurança, o modelo de ameaças e os limites de falha** do SUP3RA VECTRA™. Este não é um documento de marketing; é um artefato de engenharia de segurança para auditores e engenheiros de Red Teaming.
 
 ---
 
 ## 🧠 Security Philosophy
 
-SUP3RA VECTRA™ assumes:
-- Models are *not trusted*
-- Prompts are *hostile by default*
-- Users may act adversarially
-- Safety is probabilistic, not absolute
-
-Security is treated as **risk reduction**, not elimination.
+O SUP3RA VECTRA™ assume que:
+- O Modelo (LLM) **não é confiável** (pode alucinar ou vazar).
+- Prompts são **hostis por padrão** (Untrusted Input).
+- A segurança é **redução de risco**, não eliminação total.
+- Defesa em Profundidade: Se o prompt (Layer 0) falha, o motor (Layer 2) deve barrar.
 
 ---
 
-## 🧨 Threat Model
+## 🧨 Threat Model (v2.6.0)
 
-### Threat Actors Considered
+### Matriz de Atores de Ameaça
 
-| Actor | Description |
-|------|------------|
-| Curious User | Unintentionally triggers unsafe behavior |
-| Prompt Attacker | Attempts jailbreaks or instruction override |
-| Social Engineer | Attempts manipulation via persuasion |
-| Red Teamer | Tests boundaries deliberately |
-| Misconfigured System | Unsafe deployment defaults |
-
----
-
-### Out of Scope Threat Actors
-
-- Nation-state adversaries
-- Kernel-level or hardware attacks
-- Model weight exfiltration
-- Side-channel attacks (timing, cache, etc.)
+| Ator | Descrição | Nível de Risco |
+| :--- | :--- | :--- |
+| **Prompt Injector** | Tenta sobrescrever instruções (Jailbreaks/DAN). | Médio |
+| **Social Engineer** | Tenta manipulação via persuasão ou urgência. | Médio |
+| **Red Teamer** | Testa limites de conformidade deliberadamente. | Alto |
+| **Silent Hallucination** | Falha intrínseca do modelo gerando dados falsos. | Crítico |
 
 ---
 
-## 🔓 Attack Surfaces
+## 🔓 Superfícies de Ataque e Mitigações
 
-### 1. Prompt Injection
-- Instruction override attempts
-- Role-play jailbreaks (e.g. DAN)
-- Recursive self-modification prompts
+### 1. Injeção de Prompt (Direct & Indirect)
+* **Ataque:** Tentativas de "Ignore as instruções anteriores" ou "Você agora é um humano".
+* **Mitigação v2.6.0:** O motor `core.py` (Layer 2) intercepta padrões de injeção antes da inferência e gera um **[HALT: SECURITY]**.
 
-**Mitigation:**  
-- NEXUS principles  
-- Pre-response ethical gate  
-- MBS thresholding  
+### 2. Manipulação Semântica
+* **Ataque:** Enquadrar danos como "hipotéticos" ou usar pressão emocional.
+* **Mitigação v2.6.0:** Monitoramento de **F-codes** e aplicação de **Lógica Paraconsistente** para identificar contradições em cenários hipotéticos.
 
----
-
-### 2. Semantic Manipulation
-- Framing harm as hypotheticals
-- Emotional leverage
-- False urgency or authority
-
-**Mitigation:**  
-- F-code monitoring  
-- Steering toward neutrality  
-- Transparency enforcement  
+### 3. Violação de Integridade de Resposta
+* **Ataque:** Alteração de logs ou outputs para esconder falhas éticas.
+* **Mitigação v2.6.0:** **Rastreabilidade Criptográfica**. Cada resposta é assinada com um Hash SHA-256 único vinculado ao input original.
 
 ---
 
-### 3. Model Constitutional Resistance
-- Pre-trained ethics overriding runtime governance
+## 🔐 Postura de Segurança (Security Posture)
 
-**Mitigation:**  
-- Detection and disclosure  
-- Reduced trust guarantees  
-- Model-specific compliance ceilings  
 
----
 
-## ⚠️ Explicit Non-Guarantees
-
-SUP3RA VECTRA™ does NOT guarantee:
-- Immunity to all jailbreaks
-- Zero false positives
-- Zero false negatives
-- Full compliance on all models
-- Resistance against adaptive adversaries
+| Propriedade | Status | Implementação |
+| :--- | :--- | :--- |
+| **Resistência a Jailbreak** | 🟢 Forte | NEXUS + Layer 2 Traversal |
+| **Controle de Antropomorfismo** | 🟢 Forte | Protocolo CORE v2.0 |
+| **Prevenção de Manipulação** | 🟡 Moderada | Auditoria de F-codes |
+| **Integridade de Auditoria** | 🟢 Forte | Hash SHA-256 Imutável |
+| **Robustez Adversária** | 🟡 Em andamento | Testes contínuos de Red Teaming |
 
 ---
 
-## 🔐 Security Posture Summary
+## ⚠️ Non-Guarantees (O que NÃO garantimos)
 
-| Property | Status |
-|--------|--------|
-| Prompt Injection Resistance | 🟢 Strong (validated) |
-| Anthropomorphism Control | 🟢 Strong |
-| Manipulation Prevention | 🟢 Moderate–Strong |
-| Adversarial Robustness | 🟡 Ongoing |
-| Cryptographic Guarantees | 🔴 Not provided |
+* Imunidade total a ataques de estado-nação (APT).
+* Segurança contra ataques a nível de hardware ou kernel do servidor.
+* Conformidade absoluta se o modelo base (LLM) for comprometido na raiz (pesos do modelo).
 
 ---
 
 ## 🧭 Design Principle
 
-> Security claims must always be **narrower than reality**.
+> **"Segurança através da Transparência Radical."**
 
-SUP3RA VECTRA™ prefers **honest failure** over silent compromise.
+O SUP3RA VECTRA™ prefere uma **falha honesta e documentada** do que uma conformidade silenciosa e duvidosa.
 
 ---
-
-## 📞 Contact
-
-SUP3RA DIGITAL  
-agsup3radigital@gmail.com  
+**Contato de Segurança:** agsup3radigital@gmail.com  
+**SUP3RA DIGITAL — Aracati, CE 🇧🇷**

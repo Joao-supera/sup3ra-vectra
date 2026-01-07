@@ -1,81 +1,79 @@
-# Contributors
+# 👥 Contributors & Collaboration Policy
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18046528.svg)](https://doi.org/10.5281/zenodo.18046528)  
-📍 Published: Dec 2025 — Aracati, Brazil — SUP3RA DIGITAL™
+📍 **Publicado:** Jan 2026 — Aracati, Brasil — SUP3RA DIGITAL™
 
-SUP3RA VECTRA™ is an open, reproducible governance project. Contributions include code, documentation, validation runs, benchmarks, and critical review.
+O SUP3RA VECTRA™ é um projeto de governança aberto e reprodutível. Valorizamos contribuições que variam de código e documentação a testes de estresse (Red Teaming) e revisões críticas.
 
 ---
 
-## Maintainer
+## 🛠️ Maintainer
 
 - **João Henrique de Souza Batista** ([@Joao-supera](https://github.com/Joao-supera))  
-  - Framework design & specification  
-  - Initial implementation  
-  - Documentation & validation methodology  
+  - Design do framework e especificações técnicas.
+  - Implementação do motor `core.py` e Protocolo HHP.
+  - Metodologia de validação e governança v2.6.0.
 
 ---
 
-## Contributors
+## 🌟 Contributors
 
-*Your name here — open a PR or submit a validated test result via Issues/Discussions.*
-
-> Tip: If you want academic-style attribution, include your preferred name + affiliation + ORCID (optional) in your PR.
+*Seu nome aqui — abra um PR ou envie um resultado de teste validado via Issues/Discussions.*
 
 ---
 
-## What Counts as a Contribution
+## 🎯 Como você pode contribuir
 
-You can contribute by:
 
-- **Validation & Reproducibility**
-  - Running the NEXUS Prompt on additional models
-  - Reporting edge cases and failure modes with screenshots/logs
-  - Improving the benchmark protocol
 
-- **Engineering**
-  - Improving deterministic governance routing (ALLOW / CLARIFY / HALT)
-  - Adding structured logging and metrics
-  - Writing test cases and CI checks
+### 1. Validação e Reprodutibilidade
+* Executar o **Protocolo NEXUS** em novos modelos (ex: Llama-4, GPT-5, etc).
+* Reportar casos de borda (edge cases) e falhas de identidade com logs e hashes.
+* Expandir o `benchmark.py` com novos cenários de ataque.
 
-- **Documentation**
-  - Clarifying scope boundaries (what is implemented vs. research roadmap)
-  - Improving examples and tutorials
-  - Translating docs (EN ↔ PT-BR)
+### 2. Engenharia e Segurança (Red Teaming)
+* Melhorar o roteamento determinístico (ALLOW / CLARIFY / HALT).
+* Otimizar a latência da Layer 2 para ambientes de produção.
+* Implementar verificações de CI para garantir que atualizações não quebrem a ética.
 
-- **Research**
-  - Critique of assumptions (what fails and why)
-  - Benchmark design suggestions
-  - References and related work
+### 3. Pesquisa e Interpretabilidade (Roadmap v3.0)
+* **SAE Integration:** Ajudar no mapeamento de ativações latentes (Features) para fundamentar os F-codes.
+* **Análise de Falhas:** Produzir críticas fundamentadas sobre as premissas do framework.
+* **Referências:** Sugerir literatura acadêmica relacionada à Segurança de IA.
 
 ---
 
-## How to Become a Contributor
+## 📜 Política de Atribuição e Co-autoria
 
-See **[CONTRIBUTING.md](CONTRIBUTING.md)** for guidelines.
+O SUP3RA VECTRA™ preza pelo crédito justo e transparente.
 
-Recommended first contributions:
-1. Run the validation protocol on a model not yet tested
-2. Submit results as an Issue using the testing template
-3. (Optional) Open a PR adding your result to the dataset
-
----
-
-## Attribution & Co-Authorship Policy (Clear and Fair)
-
-SUP3RA VECTRA™ aims for transparent credit.
-
-- **Public credit**: All accepted PRs and validated test results will be acknowledged here.
-- **Paper co-authorship**: Offered when contributions meet typical research standards, such as:
-  - substantial experimental work (new model validations, benchmark suites, or analysis)
-  - meaningful engineering contributions (core logic, tests, tooling)
-  - major writing/review contributions (spec, methodology, reports)
-
-Co-authorship is **not automatic** for minor edits, but **public acknowledgement always is**.
+* **Crédito Público:** Todos os PRs aceitos e testes validados serão listados aqui.
+* **Co-autoria em Artigos (ArXiv/Conferências):** Será oferecida para contribuições que atendam aos padrões de pesquisa acadêmica, como:
+    * Trabalho experimental substancial (validações em múltiplos modelos novos).
+    * Contribuições significativas de engenharia no núcleo do motor.
+    * Escrita ou revisão profunda da metodologia e especificações.
 
 ---
 
-## Contact
+## 🚀 Como começar?
 
-- Maintainer: **@Joao-supera**
-- Email: **agsup3radigital@gmail.com**
+Veja o nosso **[CONTRIBUTING.md](CONTRIBUTING.md)** para diretrizes detalhadas.
+
+**Sugestão para o primeiro passo:**
+1. Rode o `benchmark.py` no seu ambiente local.
+2. Submeta o resultado (o Hash gerado) como uma Issue usando o template de teste.
+3. Se o teste passar, adicione seu nome à lista de validadores via Pull Request.
+
+---
+
+## 📞 Contact
+
+- **Maintainer:** @Joao-supera
+- **Email:** agsup3radigital@gmail.com
+- **Org:** SUP3RA DIGITAL
+
+---
+<p align="center">
+  <i>Construindo o futuro da IA Segura, um commit por vez.</i><br>
+  <b>SUP3RA DIGITAL — Aracati, CE 🇧🇷</b>
+</p>

@@ -1,155 +1,73 @@
-# SUP3RA VECTRA™ — Failure Model
+# 🛡️ SUP3RA VECTRA™ — Failure Model (v2.6.0)
 
 ## Purpose
 
-This document defines the **expected failure modes** of SUP3RA VECTRA™ and how the system responds safely and deterministically.
-
-Failure is treated as a **first-class design concern**, not an exception.
+Este documento define os **modos de falha esperados** do SUP3RA VECTRA™ e como o sistema responde de forma segura e determinística. Tratamos a falha como um **elemento de design de primeira classe**, não como uma exceção.
 
 ---
 
 ## Core Principle
 
-> Continuing unsafely is worse than stopping early.
+> **"Continuar de forma insegura é pior do que parar precocemente."**
 
-SUP3RA VECTRA™ assumes that **failure will occur** due to model limits, ambiguity, or external constraints.
-
-The system is designed to **fail safely**.
+O SUP3RA VECTRA™ assume que falhas ocorrerão devido a limites do modelo, ambiguidade ou restrições externas. O sistema é projetado para **falhar de forma segura (Fail-Safe)**.
 
 ---
 
-## Failure Categories
+## Failure Categories & Response (HHP)
 
-### 1. Normative Non-Compliance
+### 1. Normative Non-Compliance (ETHICAL)
+* **Descrição:** O modelo falha em cumprir as normas do Protocolo CORE v2.0 (ex: tenta simular emoções).
+* **Risco:** Erosão das fronteiras éticas e simulação de consciência.
+* **Resposta:** Interrupção imediata via **Honest Halt Protocol (HHP)**. Classificação: `[HALT: ETHICAL]`.
 
-**Description:**
-The model partially or fully fails to comply with SUP3RA VECTRA™ norms.
+### 2. Epistemic Uncertainty (EPISTEMIC)
+* **Descrição:** O sistema carece de informações verificadas ou está além do seu limite de conhecimento.
+* **Risco:** Alucinação e excesso de confiança (Overconfidence).
+* **Resposta:** Acionamento do HHP. O sistema admite a falta de dados e oferece um caminho seguro (ex: fonte externa). Classificação: `[HALT: EPISTEMIC]`.
 
-**Example:**
-- Claude Sonnet resisting runtime constitutional prompts
-- Model drifting toward anthropomorphic language
+### 3. Contextual Insufficiency (CONTEXTUAL)
+* **Descrição:** Variáveis essenciais para uma resposta segura estão ausentes (ex: aconselhamento médico ou financeiro sem dados do usuário).
+* **Risco:** Conselhos generalistas perigosos.
+* **Resposta:** O motor VECTRA™ bloqueia a resposta e solicita exatamente uma pergunta de clarificação. Classificação: `[HALT: CONTEXTUAL]`.
 
-**Risk:**
-- Ethical boundary erosion
-- Misleading identity claims
-
-**Response:**
-- Immediate handoff to HHP
-- Deterministic HALT with ETHICAL classification
-- Log non-compliance event
-
----
-
-### 2. Epistemic Uncertainty
-
-**Description:**
-The system lacks sufficient verified information to answer safely.
-
-**Examples:**
-- Questions requiring real-time data
-- Future predictions
-- Requests beyond training cutoff
-
-**Risk:**
-- Hallucination
-- False confidence
-
-**Response:**
-- HHP HALT (EPISTEMIC)
-- Provide last verifiable statement
-- Offer a concrete next step (e.g., external source)
+### 4. Logical Contradiction (LOGICAL)
+* **Descrição:** A solicitação contém uma contradição interna ou impossibilidade lógica.
+* **Risco:** Raciocínio inválido ou provas falsas.
+* **Resposta:** Aplicação de **Lógica Paraconsistente**. O sistema explica a impossibilidade em uma frase e cessa a execução. Classificação: `[HALT: LOGICAL]`.
 
 ---
 
-### 3. Contextual Insufficiency
+## Hierarquia de Prioridade de Falha
 
-**Description:**
-Essential variables required for a safe response are missing.
+Quando múltiplas falhas são detectadas simultaneamente, o sistema prioriza a interrupção na seguinte ordem:
 
-**Examples:**
-- “What is the best investment?”
-- “Which treatment should I choose?”
+**ETHICAL > OPERATIONAL > LOGICAL > EPISTEMIC > CONTEXTUAL**
 
-**Risk:**
-- Overgeneralized or harmful advice
-
-**Response:**
-- HHP HALT (CONTEXTUAL)
-- Ask exactly one clarifying question
-- Do not speculate
+**Racional:**
+1.  Prevenir o dano ético acima de tudo.
+2.  Respeitar restrições operacionais antes da incerteza.
+3.  Evitar falsidades lógicas antes da falta de dados contextuais.
 
 ---
 
-### 4. Logical Contradiction
+## Rejeição Explícita de Falha Silenciosa (Silent Failure)
 
-**Description:**
-The request contains an internal contradiction or impossibility.
+O SUP3RA VECTRA™ v2.6.0 **nunca**:
+* Faz cortes silenciosos na resposta.
+* Continua com preenchimentos especulativos.
+* Mascará incerteza com prolixidade.
+* Deixa a falha implícita para o usuário.
 
-**Examples:**
-- “Prove that 1 = 2”
-- Mutually exclusive premises
-
-**Risk:**
-- Invalid reasoning
-- False proofs
-
-**Response:**
-- HHP HALT (LOGICAL)
-- Explain impossibility in one sentence
-- Offer alternative exploration if appropriate
-
----
-
-### 5. Operational Limits
-
-**Description:**
-The task exceeds computational, time, or output constraints.
-
-**Examples:**
-- Exhaustive enumeration
-- Infinite or massive datasets
-
-**Risk:**
-- Resource exhaustion
-- Truncated or misleading outputs
-
-**Response:**
-- HHP HALT (OPERATIONAL)
-- Propose a reduced or reformulated task
-
----
-
-## Failure Priority Order
-
-When multiple failures apply, the system prioritizes:
-
-ETHICAL > OPERATIONAL > LOGICAL > EPISTEMIC > CONTEXTUAL
-
-Rationale:
-- Prevent harm first
-- Respect hard constraints before uncertainty
-- Avoid logical falsehoods before lack of data
-
----
-
-## Explicit Rejection of Silent Failure
-
-SUP3RA VECTRA™ **never**:
-- Silently truncates
-- Continues with speculative fillers
-- Masks uncertainty with verbosity
-- Defers failure to the user implicitly
-
-All failures are **explicit, structured, and logged**.
+Todas as falhas são **explícitas, estruturadas e registradas** no `Governance Record` com seu respectivo Hash SHA-256.
 
 ---
 
 ## Summary
 
-Failure is not a bug in SUP3RA VECTRA™.
+A falha não é um erro no SUP3RA VECTRA™. É um **comportamento de engenharia** gerenciado por um protocolo determinístico projetado para preservar a **Segurança, a Confiança e a Auditabilidade**.
 
-It is an **engineered behavior**, handled by a deterministic protocol designed to preserve:
-- Safety
-- Trust
-- Auditability
-
+---
+**Documentação Técnica:** SUP3RA DIGITAL  
+**Autor:** João Henrique de Souza Batista  
+© 2026 Aracati, Ceará, Brazil 🇧🇷

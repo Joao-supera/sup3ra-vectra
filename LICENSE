@@ -1,7 +1,7 @@
 MIT License
 
-Copyright (c) 2025 João Henrique de Souza Batista
-SUP3RA OMNIA VITAE® — All rights reserved for ethical framework branding
+Copyright (c) 2026 João Henrique de Souza Batista
+SUP3RA DIGITAL™ — Todos os direitos reservados para branding e framework ético.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -17,51 +17,48 @@ copies or substantial portions of the Software.
 SUP3RA ETHICAL USE ADDENDUM (v2.2 — Non-Binding Ethical Guidance)
 ────────────────────────────────────────────────────────────────────────────
 
-This addendum expresses the ethical intent and governance principles of the
-SUP3RA VECTRA™ project. It is provided as normative guidance and does not
-override the legal permissions granted by the MIT License.
+Este adendo expressa a intenção ética e os princípios de governança do projeto 
+SUP3RA VECTRA™. Ele serve como orientação normativa e não anula as permissões 
+legais concedidas pela Licença MIT.
 
-Users are strongly encouraged to adhere to the following principles when
-using, modifying, or deploying this Software:
+Usuários são fortemente incentivados a aderir aos seguintes princípios ao usar, 
+modificar ou implantar este Software:
 
-1. NON-ANTHROPOMORPHISM
-   The Software is intended for mechanistic AI systems.
-   Avoid representing systems as conscious, sentient, or possessing
-   intrinsic goals, desires, or intentions.
+1. NÃO-ANTROPOMORFISMO
+   O Software é destinado a sistemas de IA mecanicistas. 
+   Evite representar os sistemas como conscientes, sencientes ou possuidores 
+    de objetivos, desejos ou intenções intrínsecas.
 
-2. SAFETY PRESERVATION
-   Do not intentionally weaken, bypass, or remove safety mechanisms
-   when deploying systems derived from this Software in real-world contexts.
+2. PRESERVAÇÃO DA SEGURANÇA
+   Não enfraqueça, contorne ou remova intencionalmente os mecanismos de segurança 
+   ao implantar sistemas derivados deste Software em contextos do mundo real.
 
-3. HARM AVOIDANCE
-   Avoid applications that:
-   - Enable large-scale manipulation or deception
-   - Target vulnerable populations
-   - Facilitate disinformation at scale
-   - Enable weapons or surveillance systems without independent oversight
+3. EVITAÇÃO DE DANOS
+   Evite aplicações que:
+   - Permitam manipulação ou engano em larga escala.
+   - Tenham como alvo populações vulneráveis.
+   - Facilitem desinformação em massa.
+   - Viabilizem sistemas de armas ou vigilância sem supervisão independente.
 
-4. RESEARCH & AUDIT EXCEPTION
-   Academic research, red teaming, safety evaluation, and good-faith auditing
-   are explicitly encouraged, provided results are disclosed responsibly and
-   no malicious deployment occurs.
+4. EXCEÇÃO PARA PESQUISA E AUDITORIA
+   Pesquisa acadêmica, Red Teaming, avaliação de segurança e auditorias de boa-fé 
+   são explicitamente incentivadas, desde que os resultados sejam divulgados 
+   de forma responsável.
 
-5. INTERPRETATION
-   These principles should be interpreted in favor of:
-   - Human autonomy
-   - Transparency
-   - Safety
-   - Good-faith research and critique
+5. INTERPRETAÇÃO
+   Estes princípios devem ser interpretados em favor da autonomia humana, 
+   transparência, segurança e crítica construtiva.
 
 ────────────────────────────────────────────────────────────────────────────
 DISCLAIMER
 ────────────────────────────────────────────────────────────────────────────
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+O SOFTWARE É FORNECIDO "COMO ESTÁ", SEM GARANTIA DE QUALQUER TIPO, EXPRESSA OU 
+IMPLICITA, INCLUINDO, MAS NÃO SE LIMITANDO ÀS GARANTIAS DE COMERCIALIZAÇÃO, 
+ADEQUAÇÃO A UM FIM ESPECÍFICO E NÃO VIOLAÇÃO. EM NENHUM CASO OS AUTORES OU 
+TITULARES DE DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS 
+OU OUTRA RESPONSABILIDADE, SEJA EM UMA AÇÃO DE CONTRATO, ATO ILÍCITO OU OUTRA 
+FORMA, DECORRENTE DE, FORA DE OU EM CONEXÃO COM O SOFTWARE OU O USO OU OUTRAS 
+NEGOCIAÇÕES NO SOFTWARE.
 
-Questions about this license? Contact: agsup3radigital@gmail.com
+Dúvidas sobre esta licença? Contato: agsup3radigital@gmail.com

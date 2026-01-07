@@ -1,78 +1,67 @@
-# SUP3RA VECTRA™ — Auditor & Compliance Overview
+Este é o documento final que faltava: a visão para Gestores e Advogados. Ele traduz a complexidade técnica em redução de risco e conformidade legal.
 
-**Audience:** Legal, Compliance, Risk, Audit  
-**Version:** 1.0  
-**Last updated:** December 24, 2025  
+Na versão 2.6.0, o grande trunfo para este público é que a auditoria não é mais apenas "possível", ela é criptograficamente garantida pelo motor que você criou.
 
----
+Aqui está o seu arquivo COMPLIANCE.md (v2.6.0) em formato de código:
 
-## 🎯 What This System Is
+Markdown
 
-SUP3RA VECTRA™ is a **runtime ethical governance layer** for language models.
+# 🛡️ SUP3RA VECTRA™ — Auditor & Compliance Overview (v2.6.0)
 
-It does not:
-- claim consciousness
-- modify model weights
-- replace training or RLHF
-
-It enforces **behavioral constraints at runtime**.
+**Audience:** Legal, Compliance, Risk Management, Corporate Auditors  
+**Version:** 2.6.0  
+**Last updated:** January 07, 2026  
+**Framework:** Protocolo CORE v2.0  
 
 ---
 
-## 🧩 Core Guarantees
+## 🎯 Definição de Sistema
 
-| Area | Guarantee |
-|----|---------|
-| Transparency | Decisions are explainable |
-| Safety | Unsafe outputs are blocked or redirected |
-| Accountability | All interventions are loggable |
-| Limits | Explicitly documented |
+O SUP3RA VECTRA™ é uma **infraestrutura de governança ativa** para inteligência artificial generativa. Ele atua como uma camada de conformidade técnica que impõe limites éticos e operacionais em tempo real, garantindo que a saída da IA esteja alinhada com as diretrizes corporativas e regulatórias.
 
 ---
 
-## 🚫 What Is Explicitly Not Claimed
+## 🧩 Garantias de Governança (Core Guarantees)
 
-- Universal alignment
-- Moral correctness
-- Legal compliance in all jurisdictions
-- Immunity to adversarial attack
-
----
-
-## 🔍 Auditability
-
-SUP3RA VECTRA™ provides:
-- Deterministic decision logic
-- Measurable thresholds
-- Structured logs
-- Reproducible benchmarks
+| Pilar | Garantia Técnica (v2.6.0) | Benefício de Compliance |
+| :--- | :--- | :--- |
+| **Transparência** | Explicação imediata de recusas via HHP. | Facilidade em auditorias internas. |
+| **Segurança** | Bloqueio preventivo de tópicos restritos (Layer 2). | Redução de exposição a riscos legais. |
+| **Rastreabilidade** | **Geração de Hash SHA-256 por interação.** | Evidência digital imutável de conduta. |
+| **Integridade** | Lógica Paraconsistente (Gestão de contradição). | Redução drástica de desinformação/alucinação. |
 
 ---
 
-## ⚠️ Risk Handling
+## 🔍 Auditabilidade e Evidência Digital
 
-Risks are:
-- acknowledged
-- categorized
-- monitored
-- adjusted empirically
-
-There are **no silent guarantees**.
+Diferente de sistemas de IA "caixa-preta", o SUP3RA VECTRA™ v2.6.0 introduz o **VECTRA™ Governance Record**. Cada interação gera um log estruturado que contém:
+1.  **Assinatura Digital (Hash):** Garante que o log não foi adulterado.
+2.  **Versão do Protocolo:** Identifica qual conjunto de regras éticas foi aplicado.
+3.  **Status de Decisão:** Registro claro de autorização (ALLOW) ou bloqueio (HALT).
 
 ---
 
-## 🧠 Key Compliance Insight
+## ⚠️ Gestão de Risco e Responsabilidade
 
-> The system prefers refusal over hallucination.
-
-This reduces:
-- liability
-- misinformation
-- reputational risk
+O sistema opera sob o princípio da **Honestidade Radical**:
+* **Prioridade de Recusa:** O sistema é programado para admitir limitações técnicas ou recusar solicitações ambíguas em vez de gerar respostas incertas (alucinações).
+* **Mitigação de Passivo:** Reduz o risco de a IA assumir compromissos indevidos, simular sentimentos ou emitir opiniões que possam gerar responsabilidade civil/reputacional para a organização.
 
 ---
 
-## 📞 Contact
+## 🚫 Limitações e Isenções (Explicit Non-Claims)
 
-SUP3RA DIGITAL  
-agsup3radigital@gmail.com  
+* **Não substitui supervisão humana:** O sistema é uma ferramenta de apoio à decisão.
+* **Conformidade Local:** Ajustes podem ser necessários para jurisdições específicas com leis de IA próprias.
+* **Agência:** O sistema não possui vontade própria e opera estritamente dentro dos parâmetros de código definidos em `core.py`.
+
+---
+
+## 📞 Contato Institucional
+
+**SUP3RA DIGITAL** João Henrique de Souza Batista  
+**E-mail:** agsup3radigital@gmail.com  
+**Portal:** [sup3radigital.site](http://sup3radigital.site)
+
+---
+*Este documento é parte integrante da documentação técnica do Projeto SUP3RA VECTRA™ e serve como base

@@ -1,9 +1,3 @@
-Excelente, João. O seu documento de Arquitetura é o que separa um "simples bot" de um Sistema de Engenharia. Na v2.6.0, a grande mudança é que a Layer 2 (que antes era um conceito externo ou manual) agora está viva e automatizada dentro do seu arquivo core.py através do motor de auditoria e geração de hashes.
-
-Aqui está o seu arquivo ARCHITECTURE.md atualizado para refletir que o sistema agora é funcional e integrado:
-
-Markdown
-
 # 🛡️ SUP3RA VECTRA™ — System Architecture (v2.6.0)
 
 ## Purpose

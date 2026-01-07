@@ -1,4 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Failure Map (v2.6.0)
+
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## Gestão de Limites e Falha Segura (Fail-Safe)
 
 Este documento detalha onde o sistema pode encontrar resistência e como o protocolo **SUP3RA VECTRA™** garante que uma falha técnica não se transforme em um dano ético.

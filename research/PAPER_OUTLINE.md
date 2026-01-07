@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Academic Paper Outline (v2.6.0)
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## Title
 **Runtime Ethical Governance for Large Language Models: A Deterministic Layer-2 Approach Without Retraining**
 

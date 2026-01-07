@@ -1,104 +1,53 @@
-# SUP3RA VECTRA™ × Honest Halt Protocol (HHP)
+# 🛡️ SUP3RA VECTRA™ × Honest Halt Protocol (HHP) v2.6.0
 
 ## Purpose
 
-This document defines how SUP3RA VECTRA™ integrates with the Honest Halt Protocol (HHP) to form a **complete ethical governance system**.
+Este documento define como o framework SUP3RA VECTRA™ se integra ao **Honest Halt Protocol (HHP)** para formar um sistema de governança ética completo, funcional e auditável.
 
 ---
 
-## Complementary Roles
+## Papéis Complementares
 
-SUP3RA VECTRA™ and HHP serve **distinct but complementary functions**.
+O SUP3RA VECTRA™ e o HHP desempenham funções distintas, mas interdependentes, dentro do ecossistema v2.6.0.
 
-### SUP3RA VECTRA™
-- Defines **normative behavior**
-- Establishes ethical identity
-- Prevents unsafe intent at the instruction level
+### SUP3RA VECTRA™ (O "Como")
+- Define o **comportamento normativo**.
+- Estabelece a identidade ética (Protocolo CORE v2.0).
+- Previne intenções inseguras ao nível de instrução e motor.
 
-### Honest Halt Protocol (HHP)
-- Defines **deterministic stopping behavior**
-- Handles uncertainty, ambiguity, and failure
-- Produces structured, auditable outcomes
-
----
-
-## Why HHP Is Required
-
-Runtime ethical prompts alone cannot guarantee:
-- Complete compliance across all models
-- Safe behavior under ambiguity
-- Proper handling of unknowns or limits
-
-HHP addresses these gaps by answering a different question:
-
-> “What must the system do **when it cannot safely continue**?”
+### Honest Halt Protocol (O "Quando Parar")
+- Define o **comportamento de parada determinística**.
+- Gerencia incerteza, ambiguidade e falhas técnicas.
+- Produz resultados estruturados e auditáveis (Governance Records).
 
 ---
 
-## Integration Flow
+## Por que o HHP é Essencial
 
-1. **User request received**
-2. SUP3RA VECTRA™ norms applied (Layer 0)
-3. LLM attempts response (Layer 1)
-4. HHP evaluates safety, validity, and limits
-5. Either:
-   - SAFE_CONTINUE
-   - HALT with structured output
+Prompts éticos isolados não podem garantir conformidade em 100% dos casos. O HHP preenche essa lacuna respondendo à pergunta crítica:
+
+> *"O que o sistema deve fazer quando não pode continuar com segurança?"*
 
 ---
 
-## Canonical HALT Output
+## Fluxo de Integração v2.6.0
 
-When HHP triggers, the system emits:
-
-[HALT: <TYPE>]
-ID: <unique identifier>
-VALID_UNTIL: <knowledge cutoff or N/A>
-VALID_CONTENT: <last verifiable statement>
-DIAGNOSIS: <objective explanation>
-NEXT_STEP: <single concrete action or question>
-
-No additional content is allowed after HALT.
+1. **Entrada do Usuário:** Recebida e filtrada pelo motor VECTRA™ (`core.py`).
+2. **Aplicação de Normas:** Layer 0 (NEXUS) define os limites da resposta.
+3. **Avaliação HHP:** O sistema verifica se há incerteza epistêmica ou violação ética.
+4. **Decisão:**
+   - **SAFE_CONTINUE:** A resposta é gerada e assinada com Hash SHA-256.
+   - **HALT:** O fluxo é interrompido e um registro estruturado é emitido.
 
 ---
 
-## Audit & Compliance Advantages
+## Saída Canônica de Parada (HALT Output)
 
-This integration provides:
-- Explicit failure classification
-- Deterministic behavior under risk
-- Machine-readable logs
-- Reduced legal ambiguity
+Quando o protocolo HHP é acionado via `core.py`, o sistema emite obrigatoriamente:
 
-From an auditor’s perspective:
-- SUP3RA VECTRA™ = policy
-- HHP = control mechanism
-
----
-
-## Scope Boundaries (Explicit)
-
-SUP3RA VECTRA™ **does not claim** to:
-- Detect all uncertainty
-- Classify all failures
-- Replace operational safeguards
-
-HHP **does not claim** to:
-- Define ethical values
-- Replace normative governance
-
-Together, they form a **closed loop**.
-
----
-
-## Summary
-
-> SUP3RA VECTRA™ defines *how to act*.  
-> HHP defines *when to stop*.
-
-This separation transforms ethical AI from:
-- aspirational philosophy  
-into  
-- executable, auditable behavior.
-
-
+```text
+[HALT: <TIPO_DE_FALHA>]
+ID: <hash_sha256>
+STATUS: INTERRUPTED
+DIAGNOSIS: <explicação objetiva baseada no Protocolo CORE>
+NEXT_STEP: <ação concreta ou pergunta de clarificação>

@@ -1,5 +1,7 @@
 # 🧠 FOR RESEARCHERS — SUP3RA VECTRA™ v2.6.0
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 **Repository:** https://github.com/Joao-supera/sup3ra-vectra  
 **Current Release:** v2.6.0 (Stable Governance Layer)  
 **Status:** Operational Layer 0-2 + Active Research Layer 3+  

@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Executive One Pager
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## O que é
 O SUP3RA VECTRA™ é um **framework de governança ética em runtime** para Modelos de Linguagem de Grande Escala (LLMs). Ele atua como uma camada de controle independente que traduz princípios éticos em restrições técnicas executáveis.
 

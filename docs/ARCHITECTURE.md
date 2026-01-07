@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — System Architecture (v2.6.0)
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## Purpose
 
 Este documento define a **arquitetura explícita** do sistema SUP3RA VECTRA™. Ele clarifica as responsabilidades, os limites de escopo e como a governança ética é aplicada em tempo real (runtime) através de uma estrutura de camadas independentes.

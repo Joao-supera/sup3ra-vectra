@@ -1,5 +1,6 @@
 # 🛡️ SUP3RA VECTRA™ CORE v2.6.0
 **Dual-Layer Constitutional Governance for High-Responsibility AI**
+
 [![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
 
 O SUP3RA VECTRA™ é um framework de segurança e ética mecanicista projetado para envolver Modelos de Linguagem (LLMs) em uma camada de governança auditável. 

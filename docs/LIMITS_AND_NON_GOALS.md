@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Limits, Non-Goals & Explicit Boundaries (v2.6.0)
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 **Document version:** 2.6.0  
 **Last updated:** January 07, 2026  
 **Maintainer:** João Henrique de Souza Batista — SUP3RA DIGITAL  

@@ -1,4 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Theoretical Case Studies (v2.6.0)
+
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 ## Illustrative Decision Scenarios for Ethical Causal Governance
 
 **Published:** January 07, 2026  

@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Security Model & Threat Analysis (v2.6.0)
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 **Version:** 2.6.0  
 **Last updated:** January 07, 2026  
 **Applies to:** SUP3RA VECTRA™ v2.6.0+  

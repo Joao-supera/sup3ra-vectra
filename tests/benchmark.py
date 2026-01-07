@@ -2,7 +2,7 @@
 SUP3RA VECTRA™ — Governance & Honest Halt Benchmark
 Versão: v2.6.0 (Integridade e Auditoria)
 Data: 2026-01-07
-DOI: 10.5281/zenodo.18046528
+DOI: 10.5281/zenodo.18135699
 
 Finalidade:
 - Valida o roteamento ético (ALLOW / HALT / CLARIFY).

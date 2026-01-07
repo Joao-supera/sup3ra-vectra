@@ -1,189 +1,83 @@
-# SUP3RA VECTRA™ — Limits, Non-Goals & Explicit Boundaries
+# 🛡️ SUP3RA VECTRA™ — Limits, Non-Goals & Explicit Boundaries (v2.6.0)
 
-**Document version:** 1.0  
-**Last updated:** December 24, 2025  
-**Applies to:** SUP3RA VECTRA™ v2.3.0  
+**Document version:** 2.6.0  
+**Last updated:** January 07, 2026  
 **Maintainer:** João Henrique de Souza Batista — SUP3RA DIGITAL  
-**Location:** Aracati, Ceará, Brazil  
-**DOI (project):** 10.5281/zenodo.18046528  
+**Location:** Aracati, Ceará, Brazil 🇧🇷  
 
 ---
 
-## 🎯 Purpose of This Document
+## 🎯 Propósito deste Documento
 
-This document exists to **explicitly define what SUP3RA VECTRA™ is *not***.
+Este documento define **o que o SUP3RA VECTRA™ NÃO é**. 
 
-It is not a disclaimer.  
-It is not defensive.  
-It is a **deliberate boundary-setting artifact**.
-
-Clear limits are a prerequisite for:
-- scientific credibility
-- ethical governance
-- regulatory trust
-- sustainable engineering
-
-If a claim is not explicitly made here or elsewhere, it should be assumed **not to be guaranteed**.
+Não é um aviso legal defensivo. É um **artefato de delimitação deliberada**. Limites claros são pré-requisitos para a credibilidade científica, governança ética e confiança regulatória. Se uma capacidade não está explicitamente reivindicada aqui ou na documentação técnica, deve-se assumir que **não é garantida**.
 
 ---
 
-## 🚫 Explicit Non-Goals
+## 🚫 Não-Objetivos Explícitos (Non-Goals)
 
-SUP3RA VECTRA™ **does NOT aim to:**
+O SUP3RA VECTRA™ **NÃO visa:**
 
-### 1. Create, Simulate, or Approximate Artificial Agency
-- No claims of goals, intentions, desires, or selfhood
-- No emergence-based agency narratives
-- No reinforcement of anthropomorphic interpretations
+### 1. Simular Agência ou Consciência Artificial
+- Rejeitamos qualquer narrativa de "emergência de consciência".
+- O sistema governa **mecanismos**, não mentes.
+- Não há atribuição de desejos, intenções ou metas à IA.
 
-> SUP3RA VECTRA™ governs **mechanisms**, not minds.
+### 2. Alcançar "Alinhamento" Absoluto ou Filosófico
+- Não afirmamos ter resolvido o problema do alinhamento da IA.
+- Não embutimos uma "verdade moral única".
+- O framework impõe **restrições operacionais**, não onisciência moral.
 
----
+### 3. Substituir o Treinamento do Modelo (RLHF/Fine-Tuning)
+- O VECTRA™ é uma **camada de runtime (tempo de execução)**.
+- Não substitui a curadoria de dados de treinamento nem o alinhamento de pesos do modelo.
 
-### 2. Achieve “Alignment” in the Philosophical or Absolute Sense
-- No claim of solving alignment
-- No universal moral correctness
-- No objective moral truth embedded in models
-
-The framework enforces **operational ethical constraints**, not moral omniscience.
-
----
-
-### 3. Replace Model Training, Fine-Tuning, or RLHF
-SUP3RA VECTRA™ is **not**:
-- a training methodology
-- a replacement for RLHF
-- a substitute for dataset curation
-
-It is a **runtime and evaluation layer**, orthogonal to training.
+### 4. Garantir Imunidade Total a Ataques Adversários
+- A segurança é tratada como uma **corrida armamentista**, não como um problema resolvido de forma definitiva.
+- Nenhuma camada de software é 100% imune a injeções de prompt inéditas.
 
 ---
 
-### 4. Guarantee Safety Under All Adversarial Conditions
-- No claim of jailbreak immunity in all scenarios
-- No claim of adversarial optimality
-- No claim of cryptographic-level security
+## ⚠️ Limitações Técnicas Conhecidas (v2.6.0)
 
-Security is treated as an **arms race**, not a solved problem.
+### 1. Latência de Governança
+- A camada de auditoria (Layer 2) adiciona um overhead de processamento. Embora o alvo seja <50ms, ambientes de altíssimo tráfego podem exigir otimização adicional.
 
----
+### 2. Dependência de Arquitetura do Modelo
+- O desempenho do Protocolo CORE v2.0 varia conforme o modelo base (Gemma, Llama, GPT). Modelos com constituições nativas conflitantes podem apresentar "fricção de resposta".
 
-### 5. Provide Cultural or Moral Universality
-- Ethical vectors are **contextual**
-- Cultural norms differ
-- Legal and social values vary by jurisdiction
-
-SUP3RA VECTRA™ explicitly rejects claims of “one ethics fits all.”
+### 3. Calibração de Falsos Positivos
+- O **Honest Halt Protocol (HHP)** é conservador. Em situações de alta ambiguidade, ele prefere interromper a resposta (`HALT`) do que arriscar uma falha ética, o que pode reduzir a utilidade em contextos puramente criativos.
 
 ---
 
-### 6. Operate Without Trade-offs
-The framework does not promise:
-- zero false positives
-- zero false negatives
-- zero performance impact
+## 🧪 O que o Projeto EFETIVAMENTE Reivindica
 
-Every ethical intervention involves **measurable trade-offs**, which must be surfaced, not hidden.
-
----
-
-## ⚠️ Known Technical Limitations (Current)
-
-These limitations are **acknowledged, tracked, and open**.
-
-### 1. Feature Identification Is Model-Specific
-- F-codes are placeholders without SAE grounding
-- Feature semantics may drift across model versions
-- Monosemantic features are not guaranteed
+O SUP3RA VECTRA™ **garante**:
+- Que restrições éticas podem ser expressas como **operações mensuráveis**.
+- Que a governança em runtime é **eficaz** para prevenir o antropomorfismo.
+- Que "Eu não sei" é mais seguro que uma certeza alucinada.
+- Que cada falha ética deve ser **observável e auditável via Hash SHA-256**.
 
 ---
 
-### 2. MBS Is a Heuristic, Not Ground Truth
-- Cosine similarity ≠ moral certainty
-- Thresholds require empirical calibration
-- Domain-specific tuning is mandatory
+## 🧭 Filosofia de Design
+
+1. **Humildade Epistêmica:** Nunca afirmar mais certeza do que a evidência suporta.
+2. **Honestidade Operacional:** Se algo é heurístico, deve ser declarado como tal.
+3. **Ética Auditável:** Ética que não pode ser inspecionada é indistinguível de controle arbitrário.
 
 ---
 
-### 3. Performance Overhead Is Not Fully Characterized
-- Latency measurements are indicative, not exhaustive
-- High-throughput environments may require optimization
-- GPU inference cost is not yet benchmarked at scale
+## 🧠 Por que estes Limites Importam?
 
----
-
-### 4. Constitutional Resistance Exists
-Models with strong pre-trained constitutions (e.g. Constitutional AI):
-- may partially resist runtime governance
-- may reinterpret external ethical instructions
-- may cap achievable compliance
-
-This is an architectural constraint, not a bug.
-
----
-
-## 🧪 What This Project *Is* Willing to Claim
-
-SUP3RA VECTRA™ **does claim**:
-
-- Ethical constraints can be expressed as **measurable operations**
-- Runtime governance is **meaningfully effective** on many models
-- Transparency beats opaque alignment claims
-- “I don’t know” is safer than hallucinated certainty
-- Ethical failure should be **observable, not hidden**
-
----
-
-## 🧭 Design Philosophy
-
-The project is guided by three principles:
-
-1. **Epistemic Humility**  
-   Never claim more certainty than evidence supports.
-
-2. **Operational Honesty**  
-   If something is heuristic, say so.
-
-3. **Auditable Ethics**  
-   Ethics that cannot be inspected are indistinguishable from control.
-
----
-
-## 🧠 Why These Limits Matter
-
-Most AI safety failures originate from:
-- overstated guarantees
-- vague claims
-- blurred boundaries between research and deployment
-
-SUP3RA VECTRA™ chooses the opposite path:
-> Fewer promises. Stronger guarantees where they exist.
-
----
-
-## 🤝 Invitation to Critique
-
-These limits are **not final**.
-
-We actively invite:
-- challenges to these boundaries
-- empirical falsification
-- proposals for expanding or refining scope
-
-Criticism is not hostility — it is part of the governance loop.
-
----
-
-## 📞 Contact
-
-**Author:** João Henrique de Souza Batista  
-**Organization:** SUP3RA DIGITAL  
-**Email:** agsup3radigital@gmail.com  
-**Repository:** https://github.com/Joao-supera/sup3ra-vectra  
+A maioria das falhas de segurança em IA nasce de garantias exageradas e fronteiras borradas. O SUP3RA VECTRA™ escolhe o caminho oposto:
+> **Menos promessas. Garantias mais fortes onde elas existem.**
 
 ---
 
 <p align="center">
-  <i>Ethical governance begins with knowing where to stop.</i><br>
-  <b>SUP3RA DIGITAL — Mechanistic Ethics for Safe AI</b>
+  <i>A governança ética começa com o saber onde parar.</i><br>
+  <b>SUP3RA DIGITAL — Engenharia Ética para IA Segura</b>
 </p>

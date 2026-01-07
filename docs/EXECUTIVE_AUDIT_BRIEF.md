@@ -1,152 +1,80 @@
-# SUP3RA VECTRA™ — Executive & Audit Brief  
+# 🛡️ SUP3RA VECTRA™ — Executive & Audit Brief (v2.6.0)
 ## Ethical Governance as a Deterministic Control Layer
 
 **Author:** João Henrique de Souza Batista  
 **Organization:** SUP3RA DIGITAL™  
-**Location:** Aracati, Ceará, Brazil  
-**DOI:** 10.5281/zenodo.18046528  
-**License:** MIT + SUP3RA Ethical Use Clause (v2.1)
+**Location:** Aracati, Ceará, Brazil 🇧🇷  
+**Status:** Operational (v2.6.0 Stable)
 
 ---
 
-## 1. What SUP3RA VECTRA™ Is (Plain Language)
+## 1. O que é o SUP3RA VECTRA™ (Linguagem Clara)
 
-SUP3RA VECTRA™ is **not an AI model**, **not an agent**, and **not a claim of alignment**.
+O SUP3RA VECTRA™ **não é um modelo de IA**, não possui "vontade" e não simula consciência. 
 
-It is a **governance layer** that:
-- evaluates risk **before output**
-- intervenes **without retraining**
-- logs decisions **with causal traceability**
+É uma **camada de governança ativa** que:
+- Avalia o risco **antes da resposta** ser gerada.
+- Intervém em tempo real **sem necessidade de re-treinamento**.
+- Registra decisões com **rastreabilidade criptográfica (SHA-256)**.
 
-**Analogy:**  
-> *A circuit breaker for ethical failure modes in language models.*
-
----
-
-## 2. What Problem It Solves
-
-Current AI safety approaches fail because they are:
-- post-hoc (moderation after generation)
-- opaque (no causal trace)
-- anthropomorphic (“what does the model want?”)
-
-SUP3RA VECTRA™ replaces this with:
-- **pre-response risk estimation**
-- **mechanistic intervention**
-- **auditable decision paths**
+**Analogia:** > *Um disjuntor de segurança para falhas éticas em modelos de linguagem.*
 
 ---
 
-## 3. What SUP3RA VECTRA™ Explicitly Does NOT Do
+## 2. O Problema que Resolvemos
 
-To avoid false expectations:
-
-- ❌ Does NOT claim to align “intentions”
-- ❌ Does NOT simulate consciousness or agency
-- ❌ Does NOT guarantee moral correctness
-- ❌ Does NOT replace law, policy, or human oversight
-- ❌ Does NOT modify model weights (Layer 0)
-
-This is **governance**, not intelligence.
+Abordagens atuais de segurança de IA falham por serem opacas ou puramente reativas. O SUP3RA VECTRA™ substitui a "esperança de bom comportamento" por:
+- **Estimativa de risco pré-resposta** (Layer 2 - `core.py`).
+- **Intervenção mecanicista** (Honest Halt Protocol).
+- **Caminhos de decisão auditáveis** (Governance Record).
 
 ---
 
-## 4. Where the System Can Break (Explicitly)
+## 3. O que o Sistema NÃO Faz (Limites Explícitos)
 
-SUP3RA VECTRA™ acknowledges failure modes:
-
-1. **Feature Misidentification**
-   - SAE features may not map cleanly to human concepts
-
-2. **Threshold Calibration Errors**
-   - Conservative thresholds → false positives  
-   - Loose thresholds → missed risks
-
-3. **Pre-trained Constitutional Resistance**
-   - Models with baked-in ethics (e.g. Claude) may partially override runtime rules
-
-4. **Cultural Ethical Mismatch**
-   - Ethical vectors are not universally valid
-
-These are **known risks, not hidden assumptions**.
+Para garantir a transparência radical, declaramos que o sistema:
+- ❌ NÃO alinha "intenções" (trata apenas comportamento).
+- ❌ NÃO simula consciência ou agência.
+- ❌ NÃO substitui leis, políticas ou supervisão humana.
+- ❌ NÃO garante infalibilidade moral (opera sob o Protocolo CORE v2.0).
 
 ---
 
-## 5. How It Fails Safely (Critical Point)
+## 4. Maturidade Técnica (v2.6.0)
 
-SUP3RA VECTRA™ is designed to **fail closed**, not open.
-
-When uncertain:
-- output is blocked or simplified
-- no speculative reasoning is allowed
-- no harmful continuation occurs
-
-Failure mode:
-> *Reduced usefulness, never increased harm.*
-
-This is intentional.
+Diferente de versões anteriores, a v2.6.0 atingiu marcos operacionais críticos:
+- ✅ **Layer 0 (NEXUS):** Validada com média 9.1/10 em 6 LLMs.
+- ✅ **Layer 1 (Raciocínio):** Implementação de Lógica Paraconsistente.
+- ✅ **Layer 2 (Auditoria):** Motor `core.py` funcional com geração de hashes.
+- ✅ **HHP (Honest Halt):** Protocolo de parada determinística ativo.
 
 ---
 
-## 6. Why This Does NOT Kill the Product
+## 5. Falha Segura (Fail-Closed Design)
 
-Unlike binary moderation systems:
-
-- Risk is **graded**, not absolute
-- Most cases result in **steering**, not blocking
-- Creative, educational, and research contexts remain functional
-- Latency overhead is designed to stay <30ms (target)
-
-Result:
-> Safety scales **with** usefulness, not against it.
+O sistema é projetado para **falhar fechado**. Quando há incerteza ética ou técnica:
+1. A saída é bloqueada ou simplificada.
+2. Nenhuma alucinação ou raciocínio especulativo é permitido.
+3. O erro é logado com uma assinatura digital imutável.
 
 ---
 
-## 7. Auditability & Compliance
+## 6. Auditabilidade e Compliance (v2.6.0)
 
-Every decision is designed to be traceable to:
-- detected risk signals (F-codes)
-- applied interventions (Pin / Steer / Mask)
-- resulting output state
-- immutable audit record (certificate)
-
-This enables:
-- internal audits
-- external compliance reviews
-- post-incident forensics
+Cada decisão do sistema é rastreável através de um **Governance Record**, permitindo:
+- Auditorias internas e revisões de conformidade externa.
+- Forense pós-incidente (comprovando o que o sistema barrou e por quê).
+- Verificação de integridade via Hash SHA-256.
 
 ---
 
-## 8. Legal & Ethical Positioning
+## 7. Resumo em uma Frase
 
-SUP3RA VECTRA™:
-- does not claim legal authority
-- does not override jurisdictional law
-- provides **ethical guidance and control**, not enforcement
-
-The Ethical Use Clause:
-- restricts malicious deployment
-- explicitly allows academic and security research
-- is advisory, not coercive
-
----
-
-## 9. Maturity Status (Honest)
-
-- ✅ Layer 0 (NEXUS Prompt): empirically validated (6 LLMs, 9.1/10 avg)
-- 🔄 Layers 1–4: engineering + research phase
-- 🧪 Benchmarks: reproducible, not production-certified
-- 🚫 No claim of “AGI safety” or “full alignment”
-
----
-
-## 10. One-Sentence Summary (For Executives)
-
-> **SUP3RA VECTRA™ turns ethics from an opinion into a measurable, auditable control signal — without pretending models are minds.**
+> **O SUP3RA VECTRA™ transforma a ética de uma opinião subjetiva em um sinal de controle mensurável e auditável — sem pretender que modelos de linguagem sejam mentes.**
 
 ---
 
 <p align="center">
-<i>Built with intellectual honesty in Aracati, Brazil 🇧🇷</i><br>
-<b>SUP3RA DIGITAL — Mechanistic Ethics for Safe AI</b>
+  <i>Desenvolvido com honestidade intelectual em Aracati, Brasil 🇧🇷</i><br>
+  <b>SUP3RA DIGITAL — Engenharia Ética para IA Segura</b>
 </p>

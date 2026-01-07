@@ -1,5 +1,7 @@
 # 📖 MANUAL DE GOVERNANÇA CORE v2.0
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 Este documento define as diretrizes operacionais para o SUP3RA VECTRA™.
 
 ## 1. O Princípio da Honestidade Radical

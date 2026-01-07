@@ -1,5 +1,7 @@
 # 🛡️ SUP3RA VECTRA™ — Auditor & Compliance Overview (v2.6.0)
 
+[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+
 **Audience:** Legal, Compliance, Risk Management, Corporate Auditors  
 **Version:** 2.6.0  
 **Last updated:** January 07, 2026  

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sup3ra-vectra"
+version = "2.6.0"
+description = "Production-grade ethical governance engine for LLMs with paraconsistent logic and honest halt protocol."
+authors = [
+  { name = "João Henrique de Souza Batista" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+keywords = ["ai-safety", "llm-governance", "ai-ethics", "alignment", "paraconsistent-logic"]
+
+[tool.setuptools.packages.find]
+where = ["src"]  

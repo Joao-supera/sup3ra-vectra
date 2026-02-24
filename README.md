@@ -6,8 +6,6 @@
 
 ---
 
-# 🇬🇧 English
-
 ## Overview
 
 **SUP3RA VECTRA™** is a mechanistic AI safety and governance framework designed to wrap Large Language Models (LLMs) with a deterministic and auditable constitutional validation layer.
@@ -98,7 +96,6 @@ For inquiries, partnerships, or audits: `jh.gti2026@gmail.com`
 
 ---
 
-# 🇧🇷 Português
 
 ## Visão Geral
 

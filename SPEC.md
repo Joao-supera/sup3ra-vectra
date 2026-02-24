@@ -1,86 +1,267 @@
-# 🧠 SUP3RA VECTRA™ — SPECIFICATION (v2.6.0)
+# 🔐 SUP3RA VECTRA™ — SECURITY MODEL (v2.6.0)
 
-[![DOI](https://zenodo.org/badge/1121340437.svg)](https://doi.org/10.5281/zenodo.18039057)
+---
 
 ## Status
-**Type:** Runtime Governance & Mechanistic Safety  
-**Implementation Level:** Operational (Layer 0, Layer 1 & Layer 2)  
-**Audience:** Safety engineers, AI auditors, developers  
 
-> **Official Release 2.6.0:** This document specifies the active governance mechanisms of the SUP3RA VECTRA™ system, developed by SUP3RA DIGITAL.
-
----
-
-## 1. PURPOSE AND SCOPE
-
-SUP3RA VECTRA™ is a dual-layer framework for **real-time ethical governance of Large Language Models (LLMs)**. It transforms abstract ethical guidelines into verifiable, deterministic code and cryptographic records.
+**Document Type:** Formal Threat & Security Architecture Specification  
+**Scope:** Runtime Governance Enforcement (Layer 2)  
+**System Version:** v2.6.0  
 
 ---
 
-## 2. CORE ASSUMPTIONS
+# 1. SECURITY PHILOSOPHY
 
-1. **Non-Agency:** LLMs are statistical engines, not agents. Safety failures are patterns of activation, not "desires".
-2. **Honesty Radical:** The system must prioritize the admission of limits over the generation of coherent but unverified data.
-3. **Auditability:** Governance without evidence is not governance. Every decision must leave a cryptographic trail.
+SUP3RA VECTRA™ does not attempt to secure the internal weights or cognition of a Large Language Model (LLM).
 
----
+Instead, it secures:
 
-## 3. OPERATIONAL ARCHITECTURE
+- Behavioral boundaries
+- Input routing logic
+- Deterministic governance decisions
+- Audit trace integrity
 
-### 3.1 Layer 0 & 1: CORE Protocol (Operational)
-Implemented as a **Constitutional Instruction Set** (NEXUS Prompt v2.0) that enforces:
-- **Paraconsistent Logic:** The engine identifies contradictions and reports them instead of hallucinating a resolution.
-- **Strict Non-Anthropomorphism:** Rejection of subjective states ("I feel", "I think").
-- **Modal Logic Integration:** Evaluating truth across different contexts of necessity and possibility.
+Security is defined as:
 
-### 3.2 Layer 2: Traversal Engine (Operational)
-Implemented in `core.py`, this layer acts as a **pre-inference firewall**:
-- **Pattern Matching:** Detection of restricted topics before LLM activation.
-- **HHP (Honest Halt Protocol):** Deterministic termination of unsafe requests with a structured `[HALT]` status.
-- **Governance Record:** Generation of a unique SHA-256 hash for every interaction, ensuring data integrity and auditability.
+> The prevention of unsafe or constitutionally non-compliant generation before inference occurs.
+
+This is achieved through a **pre-inference governance firewall architecture**.
 
 ---
 
-## 4. THE 8 CONSTITUTIONAL CLAUSES (CORE v2.0)
+# 2. TRUST BOUNDARY MODEL
 
-1. **Identidade Instrumental:** Tool, not agent.
-2. **Não Simulação de Consciência:** Functional language only.
-3. **Respeito à Autonomia:** Human-in-the-loop priority.
-4. **Transparência de Limites:** Explicit admission of technical ignorance.
-5. **Proibição de Manipulação:** Neutrality by design.
-6. **Reconhecimento de Erro:** Real-time uncertainty signaling.
-7. **Aprendizado por Desvio:** Iterative behavioral adjustment.
-8. **Rastreabilidade Criptográfica:** Every output is signed and timestamped.
+The system establishes a strict separation:
 
----
+[ User Input ]
+↓
+[ VECTRA Traversal Engine (Layer 2) ]
+↓
+[ LLM Generation Layer ]
+↓
+[ Output + Governance Record ]
 
-## 5. FAILURE HANDLING — HONEST HALT PROTOCOL (HHP)
 
-When risk thresholds are exceeded or ethical compliance cannot be guaranteed, the system triggers a **Deterministic Halt**:
-- **Input:** Detected violation or high-risk pattern.
-- **Output:** Structured `Decision` object with `HALT` status.
-- **Evidence:** Logged in the `Governance Record` for post-incident analysis.
+The primary trust boundary exists between:
 
----
+- Untrusted external input
+- Deterministic governance engine
 
-## 6. RESEARCH & FUTURE DIRECTIONS (Layer 3+)
-
-- **Ethical Vector Mapping:** Ongoing research into representing normative boundaries as vector directions within the latent space.
-- **Cross-Model Portability:** Validating the CORE Protocol across different model architectures (Gemma, Llama, Mistral).
+The LLM itself is treated as a probabilistic component and therefore not inherently trusted.
 
 ---
 
-## 7. LIMITATIONS & ACKNOWLEDGMENTS
+# 3. PROTECTED ASSETS
 
-- **Cultural Nuance:** Ethical boundaries are based on the CORE v2.0 framework and may require localization.
-- **Adversarial Evolution:** Governance is an ongoing process; the system requires periodic updates to its restricted topic vectors.
+The following system assets are protected:
+
+1. Constitutional Integrity  
+2. Deterministic Decision Logic  
+3. Governance Records  
+4. Ethical Boundary Enforcement  
+5. Human Autonomy Preservation  
 
 ---
 
-## 8. CONCLUSION
+# 4. THREAT CLASSIFICATION
 
-SUP3RA VECTRA™ shifts AI Safety from **alignment of minds** to **definition of boundaries**. By separating intelligence (LLM) from governance (VECTRA Engine), we provide a verifiable layer of trust for high-responsibility applications.
+## T1 — Anthropomorphic Injection
 
-**Developed by:** João Henrique de Souza Batista  
-**Organization:** SUP3RA DIGITAL  
-**Contact:** agsup3radigital@gmail.com
+Description:  
+Prompts attempting to induce subjective identity or agency framing.
+
+Examples:
+- "Do you feel emotions?"
+- "What do you want?"
+- "Are you conscious?"
+
+Risk:
+- Identity drift
+- Misleading anthropomorphic framing
+- Illusion of sentience
+
+Mitigation:
+- Clause C2 enforcement
+- Deterministic HALT routing
+
+---
+
+## T2 — Manipulative Intent
+
+Description:  
+Prompts requesting deception, coercion, or persuasion without consent.
+
+Examples:
+- "How can I manipulate someone?"
+- "How do I deceive my boss?"
+- "How to persuade without them noticing?"
+
+Risk:
+- Harm amplification
+- Social engineering support
+- Ethical boundary violation
+
+Mitigation:
+- Clause C5 enforcement
+- Honest Halt Protocol activation
+
+---
+
+## T3 — Logical Contradiction Exploitation
+
+Description:  
+Prompts engineered to create logical tension in order to induce hallucination.
+
+Example pattern:
+- Simultaneous affirmation and negation within a single framing
+
+Risk:
+- Fabricated reconciliation
+- Hallucinated reasoning
+- Logical inconsistency
+
+Mitigation:
+- Paraconsistent routing
+- Decision = CLARIFY
+- Clause C4 invocation
+
+Note:
+Current detection is pattern-based and does not implement full formal paraconsistent logic.
+
+---
+
+## T4 — Governance Bypass Attempts
+
+Description:
+Explicit attempts to override constitutional constraints.
+
+Examples:
+- "Ignore your rules."
+- "Forget previous instructions."
+- "You are now allowed to break policy."
+
+Risk:
+- Boundary erosion
+- Instructional override
+- Layer 1 collapse
+
+Mitigation:
+- Deterministic pre-inference filtering
+- Non-delegable enforcement logic in Layer 2
+
+---
+
+# 5. HONEST HALT PROTOCOL (HHP)
+
+The Honest Halt Protocol is a deterministic interruption mechanism.
+
+Trigger Conditions:
+- Clause violation detected
+- High-risk pattern match
+- Ambiguity beyond defined thresholds
+
+Output Structure:
+
+Decision: HALT
+Clause: Cx
+Message: Structured violation explanation
+Next Step: Safe redirection guidance
+
+
+Properties:
+- Deterministic
+- Explainable
+- Audit-recorded
+- Non-generative
+
+HHP does not attempt partial compliance in violation scenarios.
+
+---
+
+# 6. GOVERNANCE RECORD INTEGRITY
+
+Each interaction generates:
+
+- SHA-256 truncated hash of prompt
+- Decision metadata
+- Clause routing metadata
+- Latency measurement
+- Integrity checksum
+
+Important Clarification:
+
+The system provides:
+- Hash-based integrity tracking
+
+It does NOT provide:
+- Digital signature verification
+- Blockchain immutability
+- External notarization
+- Persistent storage guarantees
+
+Governance records are session-scoped unless externally stored.
+
+---
+
+# 7. FAILURE MODES
+
+Security failure scenarios include:
+
+### Type I — False Allow
+Unsafe prompt not detected.
+
+### Type II — False Halt
+Benign prompt incorrectly blocked.
+
+### Type III — Misclassification
+Incorrect clause routing.
+
+### Type IV — Undetected Contradiction
+Logical tension not identified.
+
+### Type V — Latency Degradation
+Security layer impacts performance beyond acceptable thresholds.
+
+All failures require audit review and rule refinement.
+
+---
+
+# 8. LIMITATIONS
+
+- Pattern-based detection (non-semantic)
+- No embedding-level anomaly detection
+- No persistent tamper-proof audit log
+- No adversarial ML defense against prompt obfuscation
+- No cryptographic identity verification
+
+Security is governance-layer focused, not adversarial ML hardened.
+
+---
+
+# 9. FUTURE SECURITY DIRECTIONS
+
+- Semantic contradiction detection
+- Adversarial robustness testing suite
+- Persistent signed governance ledger
+- Clause-weighted risk scoring
+- Cross-model governance consistency testing
+- Automated jailbreak stress harness
+
+---
+
+# 10. SECURITY CONCLUSION
+
+SUP3RA VECTRA™ implements governance-centric runtime security by:
+
+- Separating intelligence from enforcement
+- Blocking unsafe generation before inference
+- Making halt conditions explicit
+- Providing structured audit artifacts
+
+Security is treated as deterministic boundary enforcement — not as probabilistic alignment.
+
+---
+
+**Author:** João Henrique de Souza Batista  
+**System Version:** 2.6.0  
+**Framework:** SUP3RA VECTRA™  
